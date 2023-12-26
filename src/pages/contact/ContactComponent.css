@@ -34,8 +34,9 @@
 
 .contact-heading-img-div {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  overflow: hidden;
 }
 
 .blog-heading-img-div {

@@ -12,11 +12,24 @@ class ExperienceCard extends Component {
       <div className="experience-list-item" style={{ marginTop: (index === 0 ? 30 : 50) }}>
         <Fade left duration={2000} distance="40px">
           <div className="experience-card-logo-div">
-            <img
-              className="experience-card-logo"
-              src={require(`../../assests/images/${experience["logo_path"]}`)}
-              alt=""
-            />
+          {
+            experience.fontAwesomeClassname && (
+              <span
+                className="iconify dev-icons"
+                data-icon={experience.fontAwesomeClassname}
+                data-inline="false"
+              ></span>
+            )
+          }
+          {
+            experience.logo_path && (
+              <img
+                className="experience-card-logo"
+                src={require(`../../assests/images/${experience["logo_path"]}`)}
+                alt=""
+              />
+            )
+          }
           </div>
         </Fade>
         <div className="experience-card-stepper">
