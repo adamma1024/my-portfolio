@@ -217,18 +217,10 @@ fetch(baseUrl, {
     const orgs = data["data"]["user"]["repositoriesContributedTo"]["nodes"];
     var newOrgs = { data: [] };
     for (var i = 0; i < orgs.length; i++) {
+      if(!orgs[i]) continue;
       var obj = orgs[i]["owner"];
       if (obj["__typename"] === "Organization") {
-        var flag = 0;
-        for (var j = 0; j < newOrgs["data"].length; j++) {
-          if (JSON.stringify(obj) === JSON.stringify(newOrgs["data"][j])) {
-            flag = 1;
-            break;
-          }
-        }
-        if (flag === 0) {
-          newOrgs["data"].push(obj);
-        }
+        newOrgs["data"].push(obj);
       }
     }
 
@@ -243,7 +235,7 @@ fetch(baseUrl, {
       }
     );
   })
-  .catch((error) => console.log(JSON.stringify(error)));
+  .catch((error) => console.log('org', JSON.stringify(error)));
 
 const languages_icons = {
   Python: "logos-python",
@@ -268,7 +260,6 @@ fetch(baseUrl, {
   .then((response) => response.text())
   .then((txt) => {
     const data = JSON.parse(txt);
-    // console.log(txt);
     const projects = data["data"]["user"]["pinnedItems"]["nodes"];
     var newProjects = { data: [] };
     for (var i = 0; i < projects.length; i++) {
