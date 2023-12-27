@@ -2,7 +2,7 @@
 
 // Website related settings
 const settings = {
-  isSplash: true, // Change this to false if you don't want Splash screen.
+  isSplash: false, // Change this to false if you don't want Splash screen.
 };
 
 //SEO Related settings
@@ -20,7 +20,7 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Adam Ma",
-  logo_name: "AshutoshHathidara",
+  logo_name: "AdamMa",
   nickname: "马林",
   subTitle:
     "A passionate individual who always thrives to imply technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
@@ -402,7 +402,7 @@ const degrees = {
     {
       title: "Dalian Maritime University",
       subtitle: "B.Tech. in Management Information System",
-      logo_path: "dlmu.jpg",
+      logo_path: "dlmu.png",
       alt_name: "DLMU",
       duration: "2013 - 2017",
       descriptions: [
