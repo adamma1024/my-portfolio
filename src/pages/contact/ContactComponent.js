@@ -54,6 +54,12 @@ class Contact extends Component {
                     href={greeting.resumeLink}
                     theme={theme}
                   />
+                  <Button
+                    text="查看我的中文简历"
+                    newTab={true}
+                    href={greeting.resumeLink_cn}
+                    theme={theme}
+                  />
                 </div>
               </div>
             </div>

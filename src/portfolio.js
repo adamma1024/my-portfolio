@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Adam's Portfolio",
   description:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A passionate individual who always thrives to utilize technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
   og: {
     title: "Adam Ma Portfolio",
     type: "website",
@@ -23,9 +23,9 @@ const greeting = {
   logo_name: "AdamMa",
   nickname: "马林",
   subTitle:
-    "A passionate individual who always thrives to imply technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
-  resumeLink:
-    "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
+    "A passionate individual who always thrives to utilize technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
+  resumeLink: "https://drive.google.com/open?id=1t7sWqroYG0U9FcJgJZKQOsqoh8DRNT2x&usp=drive_copy",
+  resumeLink_cn: "https://drive.google.com/open?id=1ayYsHOGyAVbQgqq5jtp75zpc_Vv-EpkX&usp=drive_copy",
   portfolio_repository: "https://github.com/adamma1024/myPortfolio",
   githubProfile: "https://github.com/adamma1024",
 };
@@ -650,7 +650,7 @@ const contactPageData = {
     title: "Blogs",
     subtitle:
       "For empowering other individuals and recording my life, I like to write articles about learning, Music, Philosophic thoughts.",
-    link: "", // TODO: Add link to blog
+    link: "",// TODO: add blog link
     avatar_image_path: "blogs_image.svg",
   },
   phoneSection: {
