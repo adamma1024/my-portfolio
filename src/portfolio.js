@@ -533,7 +533,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship",
   description:
-    "I have work experience in different fields as a software engineer, such as traditional software, internet educational platform, Cloud+AI platform and etc. I'm good at developing a user-friendly websites, and leverage fashion techs to improve Dev Experience.",
+    "I have work experience in different fields as a software engineer, including traditional software, internet educational platforms, Cloud+AI platforms, and more. I am proficient at developing user-friendly websites and leveraging fashion tech to improve the development experience.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -609,7 +609,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to develop web applications and deploy them using cloud infrastructure.",
+    "My projects make use of a vast variety of the latest technology tools. My best experience is in developing web applications and deploying them using cloud infrastructure.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -644,7 +644,7 @@ const contactPageData = {
     },
     alt: "Adam Ma",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 48 hours. I can help you with softwares and websites Development.",
+      "I am available on almost every social media. You can message me, I will reply within 48 hours. I can help you with software and website development.",
   },
   blogSection: {
     title: "Blogs",
