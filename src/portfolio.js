@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Adam Ma Portfolio",
     type: "website",
-    url: "http://adamma.me/",
+    url: "https://www.adamma.me/",
   },
 };
 
@@ -21,10 +21,10 @@ const seo = {
 const greeting = {
   title: "Adam Ma",
   logo_name: "AdamMa",
-  nickname: "马林",
+  nickname: "",
   subTitle:
     "A passionate individual who always thrives to utilize technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
-  resumeLink: "https://drive.google.com/open?id=1t7sWqroYG0U9FcJgJZKQOsqoh8DRNT2x&usp=drive_copy",
+  resumeLink: "https://drive.google.com/file/d/1szTys2M20mJXidYvBw3SDdBnmExELism/view?usp=sharing",
   resumeLink_cn: "https://drive.google.com/open?id=1ayYsHOGyAVbQgqq5jtp75zpc_Vv-EpkX&usp=drive_copy",
   portfolio_repository: "https://github.com/adamma1024/myPortfolio",
   githubProfile: "https://github.com/adamma1024",
@@ -39,7 +39,7 @@ const socialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/adam-ma-a6590a211/",
+    link: "https://www.linkedin.com/in/adamma1024/",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
@@ -123,7 +123,7 @@ const skills = {
     //   ],
     // },
     {
-      title: "Full Stack Development",
+      title: "FullStack Development",
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using React/Vue/...",
@@ -323,31 +323,6 @@ const skills = {
         },
       ],
     },
-    // {
-    //   title: "UI/UX Design",
-    //   fileName: "DesignImg",
-    //   skills: [
-    //     "⚡ Designing highly attractive user interface for mobile and web applications",
-    //     "⚡ Customizing logo designs and building logos from scratch",
-    //     "⚡ Creating the flow of application functionalities to optimize user experience",
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Figma",
-    //       fontAwesomeClassname: "simple-icons:figma",
-    //       style: {
-    //         color: "#F24E1E",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Adobe XD",
-    //       fontAwesomeClassname: "simple-icons:adobexd",
-    //       style: {
-    //         color: "#FF2BC2",
-    //       },
-    //     },
-    //   ],
-    // },
   ],
 };
 
@@ -400,15 +375,28 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
+      title: "Boston University",
+      subtitle: "Master of Science in Computer Science",
+      logo_path: "bu.png",
+      alt_name: "BU",
+      duration: "2024 - current",
+      descriptions: [
+        // "No concentration, ",
+        // "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
+        // "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+      ],
+      website_link: "https://www.bu.edu/",
+    },
+    {
       title: "Dalian Maritime University",
-      subtitle: "B.Tech. in Management Information System",
+      subtitle: "Bachelor in Management Information System",
       logo_path: "dlmu.png",
       alt_name: "DLMU",
       duration: "2013 - 2017",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        // "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
+        // "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
+        // "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
       ],
       website_link: "https://www.dlmu.edu.cn/",
     },
@@ -541,25 +529,25 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "SDE2",
+          title: "SDE II",
           company: "Microsoft",
           company_url: "https://aka.ms/Fabric",
           fontAwesomeClassname: "logos:microsoft-icon",
-          duration: "Jan 2021 - Present",
+          duration: "Jan 2021 - Aug 2024",
           location: "Beijing, China",
           description:
-            "I am working on the next generation BI Platform - Fabric. I am responsible to the developments of Notebook related artifacts, such as Notebook, Environment, Spark Job Definition and etc. I also maintain the Data Engineering's monorepo projects which contains multiple DE projects, reused libs and components.",
+            "Developed core applications for Microsoft Fabric, an AI-powered data analytics platform, from inception, including Spark Job Definition, Runtime Environment, and Data Engineering Settings. Led the development of a Monorepo model using Pnpm and Turborepo, enabling independent app installation, build, and debugging processes. Integrated Vite to reduce app startup time to 2 seconds. Streamlined E2E pipeline by using Git Diff and TypeScript AST to target only affected files, improving test reliability. Reduced pipeline execution time from 1.8 hours to about 0.5 hours. KQL is similar with the SQL and created by the MS. PM will reach out to the customers to ask if they faced some problems in these scenarios and try to improve it.",
           color: "#0879bf",
         },
         {
-          title: "Senior Software Engineer",
-          company: "Bytedance",
+          title: "Advanced FullStack Engineer",
+          company: "ByteDance",
           company_url: "https://www.bytedance.com/",
           fontAwesomeClassname: "simple-icons:bytedance",
           duration: "Apr 2020 - Dec 2021",
           location: "Shanghai, China",
           description:
-            "I worked on the Education department as the owner of Formula to provide general solutions in the Formula area, including the Formula Editor, Formula Renderer, Formula Parser and etc. I also maintained multiple Formula Services using Node.js like Formula Validating Service, Formula Rendering Service and etc.",
+            "Led the development of the Formula roadmap and delivered key components, including a Formula Rendering Component and an Online Editor, both optimized for mobile devices. Developed a splitting algorithm for formula line-break rendering and applied for a patent. Our backend was using the RPC, with the Thrift framework developed by the Facebook. I deployed it into a FaaS platform to leverage the 'Pay as you use' and auto-scale features.",
           color: "#9b1578",
         },
         {
@@ -570,7 +558,7 @@ const experience = {
           duration: "July 2017 - Mar 2020",
           location: "Beijing, China",
           description:
-            "Developing the Micro-Frontend system for the company's Data Reporting systems, for that sharing modules in multiple projects. Boasting up the speed of development and maintenance. I also developed the company's internal website for the company's internal management system.",
+            "Developed nvwa, a Micro-Frontend framework inspired by Amazon’s Micro-Frontend architecture, to integrate multiple SPAs, enhancing delivery speed for reporting systems. Created iviewex, a component library based on the iview project, which includes reusable business components for other teams.",
           color: "#fc1f20",
         },
       ],
@@ -589,35 +577,24 @@ const experience = {
             "Participating in the Chinese airport flight alerting system. Following the Chinese airport standard to develop a 3D domestication to showcase which airport has potential issues. I utilized WebGL lib like three.js and mathematic formula to execute it.",
           backgroundColor: '#111111',
         },
-        {
-          title: "Software Engineer Intern",
-          company: "Lenovo",
-          company_url: "https://www.lenovo.com/",
-          logo_path: "lenovo-logo.svg",
-          duration: "July 2019 - Oct 2019",
-          location: "Shanghai, China",
-          description:
-            "Migrating internal monitor system from Angular to Dojo2. Working with my mentor for some website features",
-          color: "#ee3c26",
-        },
       ],
     },
   ],
 };
 
-// Projects Page
+// // Projects Page
 const projectsHeader = {
-  title: "Projects",
-  description:
-    "My projects make use of a vast variety of the latest technology tools. My best experience is in developing web applications and deploying them using cloud infrastructure.",
-  avatar_image_path: "projects_image.svg",
+  //   title: "Projects",
+  //   description:
+  //     "My projects make use of a vast variety of the latest technology tools. My best experience is in developing web applications and deploying them using cloud infrastructure.",
+  //   avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
-  title: "Publications",
-  description:
-    "I have worked on and published a few research papers and publications of my own.",
-  avatar_image_path: "projects_image.svg",
+  //   title: "Publications",
+  //   description:
+  //     "I have worked on and published a few research papers and publications of my own.",
+  //   avatar_image_path: "projects_image.svg",
 };
 
 const publications = {
