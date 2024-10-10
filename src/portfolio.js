@@ -487,11 +487,29 @@ const certifications = {
     //   color_code: "#2A73CC",
     // },
     {
-      title: "Kuberenetes on GCP",
+      title: "Kuberenetes in GCP",
+      subtitle: "- Qwiklabs",
+      logo_path: "kubernetes.png",
+      certificate_link:
+        "https://www.cloudskillsboost.google/public_profiles/e7f7487b-cf9f-4fe5-a52d-8b4ae4afaf31/badges/11869072",
+      alt_name: "GCP",
+      color_code: "#4285F499",
+    },
+    {
+      title: "Devops Workflows in GCP",
       subtitle: "- Qwiklabs",
       logo_path: "gcp_logo.png",
       certificate_link:
-        "https://www.cloudskillsboost.google/public_profiles/e7f7487b-cf9f-4fe5-a52d-8b4ae4afaf31/badges/11869072",
+        "https://www.cloudskillsboost.google/public_profiles/e7f7487b-cf9f-4fe5-a52d-8b4ae4afaf31/badges/11883322",
+      alt_name: "GCP",
+      color_code: "#4285F499",
+    },
+    {
+      title: "Google Cloud Essientials",
+      subtitle: "- Qwiklabs",
+      logo_path: "gcp_logo.png",
+      certificate_link:
+        "https://www.cloudskillsboost.google/public_profiles/e7f7487b-cf9f-4fe5-a52d-8b4ae4afaf31/badges/11869471",
       alt_name: "GCP",
       color_code: "#4285F499",
     },
