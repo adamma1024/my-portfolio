@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
 import { StatelessAccordion, Panel } from "baseui/accordion";
