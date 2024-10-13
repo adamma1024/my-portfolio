@@ -15,6 +15,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm i pnpm -g
-      - run: pnpm i
-      - run: pnpm run deploy_after_fetch
+      - name: Authenticate with GitHub
+        with:
+          script: |
+            git config --global user.email "adamma2048@gmail.com"
+            git config --global user.name "adamma1024"
+            echo "//github.com:$GITHUB_TOKEN" > ~/.git-credentials
+            git config credential.helper 'store --file=~/.git-credentials'
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+      - name: Fetch and Deploy
+        with:
+          script: |
+            npm i pnpm -g
+            pnpm i
+            pnpm run deploy_after_fetch
