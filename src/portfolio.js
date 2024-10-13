@@ -24,8 +24,8 @@ const greeting = {
   nickname: "",
   subTitle:
     "A passionate individual who always thrives to utilize technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
-  resumeLink: "https://drive.google.com/file/d/1szTys2M20mJXidYvBw3SDdBnmExELism/view?usp=sharing",
-  resumeLink_cn: "https://drive.google.com/open?id=1ayYsHOGyAVbQgqq5jtp75zpc_Vv-EpkX&usp=drive_copy",
+  resumeLink: "https://drive.google.com/file/d/1HwXSzKDAk-joW1hKRTibKEbs5RbC025s/view?usp=sharing",
+  resumeLink_cn: "https://drive.google.com/file/d/1HwXSzKDAk-joW1hKRTibKEbs5RbC025s/view?usp=drive_link",
   portfolio_repository: "https://github.com/adamma1024/myPortfolio",
   githubProfile: "https://github.com/adamma1024",
 };
@@ -487,6 +487,15 @@ const certifications = {
     //   color_code: "#2A73CC",
     // },
     {
+      title: "Google Cloud Essientials",
+      subtitle: "- Qwiklabs",
+      logo_path: "gcp_logo.png",
+      certificate_link:
+        "https://www.cloudskillsboost.google/public_profiles/e7f7487b-cf9f-4fe5-a52d-8b4ae4afaf31/badges/11869471",
+      alt_name: "GCP",
+      color_code: "#4285F499",
+    },
+    {
       title: "Kuberenetes in GCP",
       subtitle: "- Qwiklabs",
       logo_path: "kubernetes.png",
@@ -501,15 +510,6 @@ const certifications = {
       logo_path: "gcp_logo.png",
       certificate_link:
         "https://www.cloudskillsboost.google/public_profiles/e7f7487b-cf9f-4fe5-a52d-8b4ae4afaf31/badges/11883322",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
-    {
-      title: "Google Cloud Essientials",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link:
-        "https://www.cloudskillsboost.google/public_profiles/e7f7487b-cf9f-4fe5-a52d-8b4ae4afaf31/badges/11869471",
       alt_name: "GCP",
       color_code: "#4285F499",
     },
