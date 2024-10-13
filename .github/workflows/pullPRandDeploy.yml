@@ -3,7 +3,12 @@ name: Update PRs and deploy
 on:
   push:
     branches:
-      - all
+      - master
+      - releases/*
+  pull_request:
+    branches:
+      - master
+      - releases/*
 
 jobs:
   pullRequestRelease:
