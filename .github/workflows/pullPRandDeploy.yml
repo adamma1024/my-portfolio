@@ -15,14 +15,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Authenticate with GitHub
-        run: |
-          git config --global user.email "adamma2048@gmail.com"
-          git config --global user.name "adamma1024"
-          echo "//github.com:$GITHUB_TOKEN" > ~/.git-credentials
-          git config credential.helper 'store --file=~/.git-credentials'
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        with:
+          token: ${{ secrets.TOKEN }}
       - name: Fetch and Deploy
         run: |
           npm i pnpm -g
