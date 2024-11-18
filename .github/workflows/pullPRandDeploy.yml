@@ -15,9 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.TOKEN }}
       - name: Fetch and Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_USERNAME: ${{ secrets.USERNAME }}
         run: |
           npm i pnpm -g
           pnpm i
