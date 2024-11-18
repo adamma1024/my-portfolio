@@ -17,9 +17,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: Fetch and Deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_EMAIL: ${{ secrets.EMAIL }}
           GITHUB_USERNAME: ${{ secrets.USERNAME }}
         run: |
+          git config --global user.email $GITHUB_EMAIL
+          git config --global user.name $GITHUB_USERNAME
           npm i pnpm -g
           pnpm i
           pnpm run deploy_after_fetch
