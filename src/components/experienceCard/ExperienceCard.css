@@ -137,10 +137,10 @@
 
 .experience-card-logo {
   width: 48px;
+  height: 30px;
   -webkit-box-shadow: 4px 3px 20px -2px grey;
   -moz-box-shadow: 4px 3px 20px -2px grey;
   box-shadow: 4px 3px 20px -2px grey;
-  border-radius: 50px;
 }
 
 .experience-card-title {

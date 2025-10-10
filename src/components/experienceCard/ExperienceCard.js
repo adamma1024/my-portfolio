@@ -25,7 +25,7 @@ class ExperienceCard extends Component {
               experience.logo_path && (
                 <img
                   className="experience-card-logo"
-                  src={require(`../../assests/images/${experience["logo_path"]}`)}
+                  src={require(`../../assests/images/${experience.logo_path}`)}
                   alt=""
                 />
               )

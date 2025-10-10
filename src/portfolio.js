@@ -550,11 +550,11 @@ const experience = {
           title: "Research Assistant",
           company: "Boston University",
           company_url: "https://www.bu.edu/",
-          fontAwesomeClassname: "logos:microsoft-icon",
+          logo_path: "bu.png",
           duration: "Jan 2025 - May 2025",
           location: "Boston, MA",
           description:
-            "Pioneered AI security validation using multi-LLM orchestration (Ollama) and RAG systems. Built evaluation frameworks for AI-generated code security with OWASP/CWE integration",
+            "Pioneered a multi-model LLM orchestration platform locally using Ollama, enabling robust testing and comparison across different model architectures. Designed and integrated a high-performance Retrieval-Augmented Generation (RAG) system, leveraging Qdrant as the vector database for efficient semantic search. Curated a specialized knowledge base by ingesting a comprehensive corpus of security benchmarks—including code samples in C, Python, and JS—and authoritative security rules from OWASP and CWE. Established a quantitative evaluation framework with custom benchmarks to measure the pipeline's effectiveness in identifying vulnerabilities and improving final code quality.",
           color: "#0879bf",
         },
         {
