@@ -10,7 +10,7 @@
     "deploy": "gh-pages -b gh-pages -d build",
     "deploy_after_fetch": "pnpm run fetch_github && pnpm run deploy",
     "eject": "react-scripts eject",
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "test": "react-scripts test"
   },
   "dependencies": {

@@ -24,7 +24,7 @@ const greeting = {
   nickname: "",
   subTitle:
     "A passionate individual who always thrives to utilize technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
-  resumeLink: "https://drive.google.com/file/d/1PjQzzvyonUEeE7rup4R76c5Wf4MJaCdH/view?usp=drive_link",
+  resumeLink: "https://drive.google.com/file/d/1BjEbCLKuNwVlfU_x7Pg7vep4diYRSdHF/view?usp=sharing",
   resumeLink_cn: "https://drive.google.com/file/d/1HwXSzKDAk-joW1hKRTibKEbs5RbC025s/view?usp=drive_link",
   portfolio_repository: "https://github.com/adamma1024/myPortfolio",
   githubProfile: "https://github.com/adamma1024",
@@ -379,7 +379,7 @@ const degrees = {
       subtitle: "Master of Science in Computer Science",
       logo_path: "bu.png",
       alt_name: "BU",
-      duration: "2024 - current",
+      duration: "2024.09 - 2026.01",
       descriptions: [
         // "No concentration, ",
         // "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
@@ -547,6 +547,17 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Research Assistant",
+          company: "Boston University",
+          company_url: "https://www.bu.edu/",
+          fontAwesomeClassname: "logos:microsoft-icon",
+          duration: "Jan 2025 - May 2025",
+          location: "Boston, MA",
+          description:
+            "Pioneered AI security validation using multi-LLM orchestration (Ollama) and RAG systems. Built evaluation frameworks for AI-generated code security with OWASP/CWE integration",
+          color: "#0879bf",
+        },
+        {
           title: "SDE II",
           company: "Microsoft",
           company_url: "https://aka.ms/Fabric",
@@ -554,11 +565,11 @@ const experience = {
           duration: "Jan 2021 - Aug 2024",
           location: "Beijing, China",
           description:
-            "Developed core applications for Microsoft Fabric, an AI-powered data analytics platform, from inception, including Spark Job Definition, Runtime Environment, and Data Engineering Settings. Led the development of a Monorepo model using Pnpm and Turborepo, enabling independent app installation, build, and debugging processes. Integrated Vite to reduce app startup time to 2 seconds. Streamlined E2E pipeline by using Git Diff and TypeScript AST to target only affected files, improving test reliability. Reduced pipeline execution time from 1.8 hours to about 0.5 hours. KQL is similar with the SQL and created by the MS. PM will reach out to the customers to ask if they faced some problems in these scenarios and try to improve it.",
+            "Developed core applications for Microsoft Fabric, an AI-powered data analytics platform. Led the development of a Monorepo model using Pnpm and Turborepo, enabling independent app installation, build, and debugging processes. Integrated Vite to reduce app startup time to 2 seconds. Streamlined E2E pipeline by using Git Diff and TypeScript AST to target only affected files, improving test reliability. Reduced pipeline execution time from 1.8 hours to about 0.5 hours. KQL is similar with the SQL and created by the MS. PM will reach out to the customers to ask if they faced some problems in these scenarios and try to improve it.",
           color: "#0879bf",
         },
         {
-          title: "Advanced FullStack Engineer",
+          title: "FullStack Engineer",
           company: "ByteDance",
           company_url: "https://www.bytedance.com/",
           fontAwesomeClassname: "simple-icons:bytedance",
@@ -569,7 +580,7 @@ const experience = {
           color: "#9b1578",
         },
         {
-          title: "JAVA Software Engineer",
+          title: "Software Engineer",
           company: "Beijing Join-Cheer Software Co., Ltd.",
           company_url: "https://www.jiuqi.com.cn/",
           logo_path: "join-cheer-logo.png",

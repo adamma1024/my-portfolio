@@ -55,7 +55,7 @@ class Contact extends Component {
                     theme={theme}
                   />
                   <Button
-                    text="查看我的中文简历"
+                    text="中文简历(暂停维护)"
                     newTab={true}
                     href={greeting.resumeLink_cn}
                     theme={theme}
@@ -143,7 +143,7 @@ class Contact extends Component {
               </Fade>
             )
           }
-         </div>
+        </div>
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
         <TopButton theme={this.props.theme} />
       </div>
