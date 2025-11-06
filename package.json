@@ -11,7 +11,7 @@
     "deploy_after_fetch": "pnpm run fetch_github && pnpm run deploy",
     "eject": "react-scripts eject",
     "dev": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "playwright test"
   },
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
@@ -41,6 +41,7 @@
   "devDependencies": {
     "@iconify/icons-logos": "^1.2.36",
     "@iconify/react": "^1.1.4",
+    "@playwright/test": "^1.56.1",
     "dotenv": "^6.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^10.5.4",

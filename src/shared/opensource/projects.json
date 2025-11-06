@@ -14,7 +14,7 @@
       "name": "agriculture-chatbot",
       "createdAt": "2025-05-25T09:13:20Z",
       "url": "https://github.com/DreamsComingTrue/agriculture-chatbot",
-      "description": null,
+      "description": "The Agriculture Assistant is an LLM-powered system aiding farmers with agricultural advice. It has Frontend (React), Backend (Python), and RAG subsystems, supporting text/image/audio input, Mandarin audio output, and knowledge retrieval via vector databases.",
       "isFork": false,
       "languages": [
         {

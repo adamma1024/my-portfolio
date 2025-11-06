@@ -24,8 +24,8 @@ const greeting = {
   nickname: "",
   subTitle:
     "A passionate individual who always thrives to utilize technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
-  resumeLink: "https://drive.google.com/file/d/1HBhlpDzRgDhQi0DHSAs07QP8Y_kNc5Cp/view?usp=sharing",
-  resumeLink_cn: "https://drive.google.com/file/d/1HBhlpDzRgDhQi0DHSAs07QP8Y_kNc5Cp/view?usp=sharing",
+  resumeLink: "https://drive.google.com/file/d/1UmZIYH1KBbLQTifyZd9weAy9VPDB1kX3/view?usp=sharing",
+  resumeLink_cn: "https://drive.google.com/file/d/1UmZIYH1KBbLQTifyZd9weAy9VPDB1kX3/view?usp=sharing",
   portfolio_repository: "https://github.com/adamma1024/myPortfolio",
   githubProfile: "https://github.com/adamma1024",
 };
