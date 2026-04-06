@@ -50,14 +50,7 @@ class Contact extends Component {
                 <div className="resume-btn-div">
                   <Button
                     text="See My Resume"
-                    newTab={true}
                     href={greeting.resumeLink}
-                    theme={theme}
-                  />
-                  <Button
-                    text="中文简历(暂停维护)"
-                    newTab={true}
-                    href={greeting.resumeLink_cn}
                     theme={theme}
                   />
                 </div>
@@ -78,8 +71,7 @@ class Contact extends Component {
                 </p>
                 <div className="blogsite-btn-div">
                   <Button
-                    text="Visit My Blogsite"
-                    newTab={true}
+                    text="Visit My Blog"
                     href={blogSection.link}
                     theme={theme}
                   />

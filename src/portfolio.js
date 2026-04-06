@@ -24,8 +24,8 @@ const greeting = {
   nickname: "",
   subTitle:
     "A passionate individual who always thrives to utilize technologies to address realistic issues, such as Education, Personal Growth, Music and etc.",
-  resumeLink: "https://drive.google.com/file/d/1WWxw5xM8dDxRFrH1sNESdwp16OjWOXhT/view?usp=sharing",
-  resumeLink_cn: "https://drive.google.com/file/d/1WWxw5xM8dDxRFrH1sNESdwp16OjWOXhT/view?usp=sharing",
+  resumeLink: "/resume",
+  resumeLink_cn: "/resume",
   portfolio_repository: "https://github.com/adamma1024/myPortfolio",
   githubProfile: "https://github.com/adamma1024",
 };
@@ -643,7 +643,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "NorwegianBlueOwl.jpg",
+    profile_image_path: "gpt_withTeeth.png",
     style: {
       width: '500px',
       height: '500px',
@@ -656,7 +656,7 @@ const contactPageData = {
     title: "Blogs",
     subtitle:
       "For empowering other individuals and recording my life, I like to write articles about learning, Music, Philosophic thoughts.",
-    link: "",// TODO: add blog link
+    link: "/blog",
     avatar_image_path: "blogs_image.svg",
   },
   phoneSection: {

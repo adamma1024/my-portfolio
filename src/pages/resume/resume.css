@@ -1,0 +1,459 @@
+/* Resume Page - Catppuccin Theme (Dark: Frappé, Light: Latte) */
+/* All styles scoped under .resume-page to avoid conflicts with portfolio */
+/* Palette ref: https://catppuccin.com/palette/ */
+
+
+/* === Dark mode (Catppuccin Frappé) === */
+.resume-page.resume-dark {
+  --rosewater: hsl(10, 57%, 88%);
+  --flamingo: hsl(0, 59%, 84%);
+  --pink: hsl(316, 73%, 84%);
+  --mauve: hsl(277, 59%, 76%);
+  --red: hsl(359, 68%, 71%);
+  --maroon: hsl(358, 66%, 76%);
+  --peach: hsl(20, 79%, 70%);
+  --yellow: hsl(40, 62%, 73%);
+  --green: hsl(96, 44%, 68%);
+  --teal: hsl(172, 39%, 65%);
+  --sky: hsl(189, 48%, 73%);
+  --sapphire: hsl(199, 55%, 69%);
+  --blue: hsl(222, 74%, 74%);
+  --lavender: hsl(239, 66%, 84%);
+  --text: hsl(227, 70%, 87%);
+  --subtext1: hsl(227, 44%, 80%);
+  --subtext0: hsl(228, 29%, 73%);
+  --overlay2: hsl(228, 22%, 66%);
+  --overlay1: hsl(227, 17%, 58%);
+  --overlay0: hsl(229, 13%, 52%);
+  --surface2: hsl(228, 13%, 44%);
+  --surface1: hsl(227, 15%, 37%);
+  --surface0: hsl(230, 16%, 30%);
+  --base: hsl(229, 19%, 23%);
+  --mantle: hsl(231, 19%, 20%);
+  --crust: hsl(229, 20%, 17%);
+
+  /* Semantic colors — dark uses lavender/blue accents */
+  --heading-color: hsl(239, 66%, 84%);
+  --heading-border: hsl(222, 74%, 74%);
+  --accent: hsl(277, 59%, 76%);
+  --company-color: hsl(20, 79%, 70%);
+  --company-bg: hsla(20, 79%, 70%, 0.1);
+
+  background-color: var(--base);
+  background-image:
+    linear-gradient(90deg, hsla(277, 59%, 76%, 0.05) 0%, transparent 70%),
+    radial-gradient(circle at 20% 80%, hsla(239, 66%, 84%, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, hsla(222, 74%, 74%, 0.05) 0%, transparent 50%);
+}
+
+/* === Light mode (Catppuccin Latte) === */
+.resume-page.resume-light {
+  --rosewater: hsl(11, 59%, 67%);
+  --flamingo: hsl(0, 60%, 67%);
+  --pink: hsl(316, 73%, 69%);
+  --mauve: hsl(266, 85%, 58%);
+  --red: hsl(347, 87%, 44%);
+  --maroon: hsl(355, 76%, 59%);
+  --peach: hsl(22, 99%, 52%);
+  --yellow: hsl(35, 77%, 49%);
+  --green: hsl(109, 58%, 40%);
+  --teal: hsl(183, 74%, 35%);
+  --sky: hsl(197, 97%, 46%);
+  --sapphire: hsl(189, 70%, 42%);
+  --blue: hsl(220, 91%, 54%);
+  --lavender: hsl(231, 97%, 72%);
+  --text: hsl(234, 16%, 35%);
+  --subtext1: hsl(233, 13%, 41%);
+  --subtext0: hsl(233, 10%, 47%);
+  --overlay2: hsl(232, 10%, 53%);
+  --overlay1: hsl(231, 10%, 59%);
+  --overlay0: hsl(228, 11%, 65%);
+  --surface2: hsl(227, 12%, 71%);
+  --surface1: hsl(225, 14%, 77%);
+  --surface0: hsl(223, 16%, 83%);
+  --base: hsl(220, 23%, 95%);
+  --mantle: hsl(220, 22%, 92%);
+  --crust: hsl(220, 21%, 89%);
+
+  /* Semantic colors — light uses blue/sapphire for professionalism */
+  --heading-color: hsl(220, 91%, 54%);
+  --heading-border: hsl(189, 70%, 42%);
+  --accent: hsl(220, 91%, 54%);
+  --company-color: hsl(347, 87%, 44%);
+  --company-bg: hsla(347, 87%, 44%, 0.06);
+
+  background-color: var(--base);
+  background-image:
+    linear-gradient(90deg, hsla(220, 91%, 54%, 0.03) 0%, transparent 70%),
+    radial-gradient(circle at 20% 80%, hsla(189, 70%, 42%, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, hsla(220, 91%, 54%, 0.03) 0%, transparent 50%);
+}
+
+/* === Base resume-page styles (shared) === */
+.resume-page {
+  color: var(--text);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Base div reset within resume scope */
+.resume-page div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+}
+
+/* A4 sizing */
+.resume-page .resume-a4 {
+  width: 790px;
+  min-height: 1123px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Section styles */
+.resume-page .r-section .t1 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  color: var(--heading-color);
+  border-bottom: 2px solid var(--heading-border);
+}
+
+.resume-page .r-section .b {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.resume-page .r-section .italic-light {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--subtext1);
+}
+
+.resume-page .r-section .italic-light div {
+  font-family: serif;
+  color: var(--subtext0);
+}
+
+/* Block styles */
+.resume-page .r-block {
+  transition: all 0.3s ease;
+}
+
+/* Between layout */
+.resume-page .r-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Experience paragraph */
+.resume-page .ex-paragraph {
+  display: block;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  color: var(--subtext1);
+  border-left: 1px solid var(--surface1);
+}
+
+/* Name */
+.resume-page .resume-name {
+  font-size: 1.25rem;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+/* Small text for skills */
+.resume-page .resume-text-xs {
+  font-size: 0.75rem;
+}
+
+/* Skill line */
+.resume-page .r-line {
+  display: block;
+}
+
+/* Code inline */
+.resume-page .code {
+  background-color: var(--surface1);
+  color: var(--text);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9em;
+  border: 1px solid var(--surface2);
+}
+
+/* Company name */
+.resume-page .company-name {
+  color: var(--company-color);
+  font-weight: 600;
+  background: var(--company-bg);
+  padding: 1px 6px;
+}
+
+/* Animation */
+.resume-page .r-section {
+  animation: resumeFadeInUp 0.6s ease-out;
+}
+
+.resume-page .r-section:nth-child(even) {
+  animation-delay: 0.1s;
+}
+
+@keyframes resumeFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Tab bar === */
+.resume-tab-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 100;
+}
+
+
+.resume-tab-bar button {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid var(--overlay0);
+  border-radius: 6px;
+  background: var(--surface0);
+  color: var(--subtext0);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.resume-tab-bar button:hover {
+  background: var(--surface1);
+  color: var(--text);
+}
+
+.resume-tab-bar button.active {
+  background: var(--accent);
+  color: var(--crust);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.resume-tab-bar .theme-toggle-btn {
+  padding: 0.4rem 0.75rem;
+  border-color: var(--overlay0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-tab-bar .theme-toggle-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--text);
+}
+
+.resume-tab-bar .theme-toggle-btn:hover svg {
+  fill: var(--accent);
+}
+
+.resume-tab-bar .print-btn {
+  background: var(--surface0);
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.resume-tab-bar .print-btn:hover {
+  background: var(--green);
+  color: var(--crust);
+}
+
+/* === Hidden print version (1x1 on screen) === */
+.resume-print-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+}
+
+/* === Print styles === */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  /* Hide everything that isn't the print version */
+  .resume-tab-bar,
+  .resume-page > .resume-a4 {
+    display: none !important;
+  }
+
+  /* Hide buy-me-a-coffee widget and any other floating elements */
+  #bmc-wbtn,
+  .bmc-btn-container,
+  [data-name="BMC-Widget"],
+  iframe[src*="buymeacoffee"],
+  script[data-name="BMC-Widget"] + * {
+    display: none !important;
+  }
+
+  /* Show the hidden print version */
+  .resume-print-only {
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* === Shared print layout === */
+  .resume-page,
+  .resume-page.resume-dark,
+  .resume-page.resume-light {
+    padding: 8mm !important;
+    min-height: 100vh !important;
+    background-image: none !important;
+  }
+
+  .resume-print-only .resume-a4 {
+    width: 100% !important;
+    min-height: auto !important;
+    padding: 0 0.5rem !important;
+  }
+
+  .resume-print-only .resume-a4 div {
+    font-size: 0.8rem;
+    line-height: 1.38;
+  }
+
+  .resume-print-only .resume-name {
+    font-size: 1.1rem !important;
+  }
+
+  .resume-print-only .r-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    animation: none !important;
+  }
+
+  .resume-print-only .r-section .t1 {
+    font-size: 1rem !important;
+    margin-top: 0.6rem !important;
+    margin-bottom: 0.35rem !important;
+    padding-bottom: 0.2rem !important;
+  }
+
+  .resume-print-only .r-block {
+    margin-bottom: 0;
+  }
+
+  .resume-print-only .r-between {
+    line-height: 1.3;
+  }
+
+  .resume-print-only .ex-paragraph {
+    margin-top: 0.25rem !important;
+    padding-left: 0.6rem !important;
+  }
+
+  .resume-print-only .resume-text-xs {
+    font-size: 0.7rem !important;
+  }
+
+  .resume-print-only .r-line {
+    line-height: 1.3;
+  }
+
+  .resume-print-only .company-name {
+    font-size: 0.85rem !important;
+    font-weight: 700 !important;
+  }
+
+  .resume-print-only .code {
+    border: none;
+    background: none !important;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+  }
+
+  /* === Light mode print — white bg, dark text === */
+  .resume-page.resume-light {
+    background-color: white !important;
+  }
+
+  .resume-page.resume-light .resume-print-only * {
+    background: white !important;
+    background-color: white !important;
+  }
+
+  .resume-page.resume-light .resume-print-only .resume-name {
+    color: hsl(0, 0%, 10%);
+  }
+
+  .resume-page.resume-light .resume-print-only .r-section .t1 {
+    color: hsl(0, 0%, 20%);
+    border-color: hsl(0, 0%, 70%);
+  }
+
+  .resume-page.resume-light .resume-print-only .r-section .b {
+    color: hsl(0, 0%, 20%);
+  }
+
+  .resume-page.resume-light .resume-print-only .ex-paragraph {
+    color: hsl(0, 0%, 25%);
+    border-color: hsl(0, 0%, 80%);
+  }
+
+  .resume-page.resume-light .resume-print-only .company-name {
+    color: hsl(0, 0%, 15%);
+    background: none !important;
+  }
+
+  .resume-page.resume-light .resume-print-only .r-section .italic-light,
+  .resume-page.resume-light .resume-print-only .r-section .italic-light div {
+    color: hsl(0, 0%, 35%);
+  }
+
+  .resume-page.resume-light .resume-print-only .resume-a4 div {
+    color: hsl(0, 0%, 15%);
+  }
+
+  /* === Dark mode print — inherit Frappé variables from screen === */
+  .resume-page.resume-dark,
+  .resume-page.resume-dark .resume-print-only,
+  .resume-page.resume-dark .resume-print-only * {
+    background-color: var(--base) !important;
+    background-image: none !important;
+  }
+
+  .resume-page.resume-dark .resume-print-only .company-name {
+    background: none !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

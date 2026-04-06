@@ -4,12 +4,15 @@
   "homepage": ".",
   "version": "0.1.0",
   "scripts": {
-    "build": "react-scripts build",
+    "build:blog": "cd /Users/malin/code/web-pro/ml-blog-astro && npm run build && rm -rf /Users/malin/code/my-projects/myPortfolio/public/blog && cp -r dist /Users/malin/code/my-projects/myPortfolio/public/blog",
+    "build:portfolio": "react-scripts build",
+    "build": "npm run build:blog && npm run build:portfolio",
     "predeploy": "npm run build",
     "fetch_github": "node git_data_fetcher.mjs",
-    "deploy": "gh-pages -b gh-pages -d build",
+    "deploy": "cp CNAME build/CNAME && gh-pages -b gh-pages -d build",
     "deploy_after_fetch": "pnpm run fetch_github && pnpm run deploy",
     "eject": "react-scripts eject",
+    "dev:blog": "cd /Users/malin/code/web-pro/ml-blog-astro && npm run dev -- --port 3003",
     "dev": "react-scripts start",
     "test": "playwright test"
   },
@@ -42,10 +45,14 @@
     "@iconify/icons-logos": "^1.2.36",
     "@iconify/react": "^1.1.4",
     "@playwright/test": "^1.56.1",
+    "@types/node": "^25.5.2",
+    "@types/react": "^16.14.69",
+    "@types/react-dom": "^16.9.25",
     "dotenv": "^6.2.0",
     "husky": "^8.0.3",
     "lint-staged": "^10.5.4",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "typescript": "^4.9.5"
   },
   "browserslist": {
     "production": [

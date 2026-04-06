@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.adamma.me/blog/sitemap-index.xml
