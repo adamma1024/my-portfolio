@@ -1,0 +1,570 @@
+<!DOCTYPE html><html dir="ltr" lang="en" class="scroll-smooth"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="canonical" href="https://www.adamma.me/blog/posts/vue-cli3-webpack/"><meta name="generator" content="Astro v5.18.1"><!-- Load Font --><style>@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/9617ee3bc3ad47fd.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:300;font-style:italic;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/9617ee3bc3ad47fd.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:400;font-style:italic;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/9617ee3bc3ad47fd.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:500;font-style:italic;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/9617ee3bc3ad47fd.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:600;font-style:italic;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/9617ee3bc3ad47fd.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:700;font-style:italic;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/616354e20c7baae2.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:300;font-style:normal;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/616354e20c7baae2.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:400;font-style:normal;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/616354e20c7baae2.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:500;font-style:normal;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/616354e20c7baae2.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:600;font-style:normal;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86";src:url("/blog/_astro/fonts/616354e20c7baae2.woff2") format("woff2");font-display:swap;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-weight:700;font-style:normal;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:italic;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:300;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:400;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:500;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:600;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}@font-face{font-family:"Google Sans Code-de078a87b11e4a86 fallback: Courier New";src:local("Courier New");font-display:swap;font-weight:700;font-style:normal;size-adjust:99.9837%;ascent-override:96.6157%;descent-override:28.6047%;}:root{--font-google-sans-code:"Google Sans Code-de078a87b11e4a86","Google Sans Code-de078a87b11e4a86 fallback: Courier New",monospace;}</style><!-- General Meta Tags --><title>Vue-cli3 Build Configuration Explained | Adam&#39;s Blog</title><meta name="title" content="Vue-cli3 Build Configuration Explained | Adam's Blog"><meta name="description" content="How to config Vue-cli3's webpack file -- vue.config.js"><meta name="author" content="Adam Ma"><link rel="sitemap" href="/sitemap-index.xml"><!-- Open Graph / Facebook --><meta property="og:title" content="Vue-cli3 Build Configuration Explained | Adam's Blog"><meta property="og:description" content="How to config Vue-cli3's webpack file -- vue.config.js"><meta property="og:url" content="https://www.adamma.me/blog/posts/vue-cli3-webpack/"><meta property="og:image" content="https://www.adamma.me/blog/posts/vue-cli3-webpack/index.png"><!-- Article Published/Modified time --><meta property="article:published_time" content="2019-06-13T00:00:00.000Z"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://www.adamma.me/blog/posts/vue-cli3-webpack/"><meta property="twitter:title" content="Vue-cli3 Build Configuration Explained | Adam's Blog"><meta property="twitter:description" content="How to config Vue-cli3's webpack file -- vue.config.js"><meta property="twitter:image" content="https://www.adamma.me/blog/posts/vue-cli3-webpack/index.png"><!-- Google JSON-LD Structured data --><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Vue-cli3 Build Configuration Explained | Adam's Blog","image":"https://www.adamma.me/blog/posts/vue-cli3-webpack/index.png","datePublished":"2019-06-13T00:00:00.000Z","author":[{"@type":"Person","name":"Adam Ma","url":"https://www.adamma.me/"}]}</script><!-- Enable RSS feed auto-discovery  --><!-- https://docs.astro.build/en/recipes/rss/#enabling-rss-feed-auto-discovery --><link rel="alternate" type="application/rss+xml" title="Adam's Blog" href="https://www.adamma.me/blog/rss.xml"><meta name="theme-color" content=""><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/blog/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js"></script><!-- Minimal inline script to prevent FOUC - sets theme immediately --><script>
+      (function () {
+        const initialColorScheme = ""; // "light" | "dark"
+        const currentTheme = localStorage.getItem("theme");
+
+        function getPreferTheme() {
+          if (currentTheme) return currentTheme;
+          if (initialColorScheme) return initialColorScheme;
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        const themeValue = getPreferTheme();
+
+        // Set theme immediately to prevent flash
+        document.firstElementChild?.setAttribute("data-theme", themeValue);
+
+        // Export minimal API for external script
+        window.theme = {
+          themeValue: themeValue,
+          getTheme: () => window.theme.themeValue,
+          setTheme: val => {
+            window.theme.themeValue = val;
+          },
+        };
+      })();
+    </script><link rel="stylesheet" href="/blog/_astro/about.BRNExaAh.css">
+<style>:where([data-astro-image]){object-fit:var(--fit);object-position:var(--pos);height:auto}:where([data-astro-image=full-width]){width:100%}:where([data-astro-image=constrained]){max-width:100%}
+@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media(prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+</style><style>[data-astro-transition-scope="astro-fam6wyqg-1"] { view-transition-name: vue-cli3-build-configuration-explained; }@layer astro { ::view-transition-old(vue-cli3-build-configuration-explained) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(vue-cli3-build-configuration-explained) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(vue-cli3-build-configuration-explained) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(vue-cli3-build-configuration-explained) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-fam6wyqg-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-fam6wyqg-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-fam6wyqg-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-fam6wyqg-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-fam6wyqg-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-fam6wyqg-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-fam6wyqg-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-fam6wyqg-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-2"] { view-transition-name: vue; }@layer astro { ::view-transition-old(vue) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(vue) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(vue) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(vue) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-3"] { view-transition-name: vue-cli; }@layer astro { ::view-transition-old(vue-cli) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(vue-cli) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(vue-cli) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(vue-cli) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-4"] { view-transition-name: webpack; }@layer astro { ::view-transition-old(webpack) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(webpack) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(webpack) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(webpack) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head> <body>  <a id="skip-to-content" href="#main-content" class="absolute start-16 -top-full z-50 bg-background px-3 py-2 text-accent backdrop-blur-lg transition-all focus:top-4">
+Skip to content
+</a> <header class="app-layout flex flex-col items-center justify-between sm:flex-row" data-blog-base="/blog"> <div id="top-nav-wrap" class="py-4 sm:py-6 border-b border-border relative w-full bg-background flex items-baseline justify-between sm:items-center"> <a href="/blog/" class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"> Adam&#39;s Blog </a> <nav id="nav-menu" class="flex w-full flex-col items-center sm:ms-2 sm:flex-row sm:justify-end sm:space-x-4 sm:py-0"> <button id="menu-btn" class="focus-outline self-end p-2 sm:hidden" aria-label="Open Menu" aria-expanded="false" aria-controls="menu-items"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden" id="close-icon"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep" id="menu-icon"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg> </button> <ul id="menu-items" class="mt-4 grid w-44 grid-cols-2 place-content-center gap-2 [&#38;>li>a]:block [&#38;>li>a]:px-4 [&#38;>li>a]:py-3 [&#38;>li>a]:text-center [&#38;>li>a]:font-medium [&#38;>li>a]:hover:text-accent sm:[&#38;>li>a]:px-2 sm:[&#38;>li>a]:py-1 hidden sm:mt-0 sm:flex sm:w-auto sm:gap-x-5 sm:gap-y-0"> <li class="col-span-2"> <a href="/blog/posts">
+Posts
+</a> </li> <li class="col-span-2"> <a href="/blog/tags">
+Tags
+</a> </li> <li class="col-span-2"> <a href="/blog/about">
+About
+</a> </li> <li class="col-span-2"> <a href="/blog/archives" title="Archives" aria-label="archives" class="group inline-flex items-center gap-1 hover:text-accent focus-outline flex justify-center p-3 sm:p-1">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hidden sm:inline-block"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" /><path d="M10 12l4 0" /></svg> <span class="sm:sr-only">Archives</span>  </a> </li> <li class="col-span-1 flex items-center justify-center"> <a href="/blog/rss.xml" title="RSS Feed" aria-label="RSS Feed" target="_blank" class="group inline-flex items-center gap-1 hover:text-accent focus-outline flex p-3 sm:p-1">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-rss"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 4a16 16 0 0 1 16 16" /><path d="M4 11a9 9 0 0 1 9 9" /></svg> <span class="sr-only">RSS Feed</span>  </a> </li> <li class="col-span-1 flex items-center justify-center"> <button id="lang-btn" class="focus-outline flex items-center gap-1 p-3 sm:p-1 hover:text-accent" title="Switch language" aria-label="Switch language"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></svg> <span id="lang-label" class="text-xs font-semibold">EN</span> </button> </li> <li class="col-span-1 flex items-center justify-center"> <a href="/blog/search" title="Search" aria-label="search" class="group inline-flex items-center gap-1 hover:text-accent focus-outline flex p-3 sm:p-1">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg> <span class="sr-only">Search</span>  </a> </li> <li class="col-span-1 flex items-center justify-center"> <button id="theme-btn" class="focus-outline relative size-12 p-4 sm:size-8 hover:[&>svg]:stroke-accent" title="Toggles light & dark" aria-label="auto" aria-live="polite"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[50%] left-[50%] -translate-[50%] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="absolute top-[50%] left-[50%] -translate-[50%] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" /><path d="M6.343 17.657l-1.414 1.414" /><path d="M6.343 6.343l-1.414 -1.414" /><path d="M17.657 6.343l1.414 -1.414" /><path d="M17.657 17.657l1.414 1.414" /><path d="M4 12h-2" /><path d="M12 4v-2" /><path d="M20 12h2" /><path d="M12 20v2" /></svg> </button> </li> </ul> </nav> </div> </header> <script type="module">function l(){const e=document.querySelector("#menu-btn"),t=document.querySelector("#menu-items"),o=document.querySelector("#menu-icon"),a=document.querySelector("#close-icon");!e||!t||!o||!a||e.addEventListener("click",()=>{const n=e.getAttribute("aria-expanded")==="true";e.setAttribute("aria-expanded",n?"false":"true"),e.setAttribute("aria-label",n?"Open Menu":"Close Menu"),t.classList.toggle("hidden"),o.classList.toggle("hidden"),a.classList.toggle("hidden")})}l();function r(){const e=document.querySelector("#lang-btn"),t=document.querySelector("#lang-label");if(!e)return;const o=localStorage.getItem("lang")||"en";t&&(t.textContent=o.toUpperCase()),e.addEventListener("click",()=>{const n=(localStorage.getItem("lang")||"en")==="en"?"zh":"en";localStorage.setItem("lang",n),t&&(t.textContent=n.toUpperCase());const c="/blog".replace(/\/$/,"");n==="zh"?window.location.href=c+"/zh/":window.location.href=c+"/"})}r();document.addEventListener("astro:after-swap",()=>{l(),r()});</script> <div class="app-layout flex items-center justify-start"><a id="back-button" href="/blog" class="group inline-flex items-center gap-1 hover:text-accent focus-outline -ms-2 mt-8 mb-2 hover:text-foreground/75"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 rtl:rotate-180"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg><span>Go back</span> </a></div><script type="module">function o(){const t=document.querySelector("#back-button"),e=sessionStorage.getItem("backUrl");e&&t&&(t.href=e)}document.addEventListener("astro:page-load",o);o();</script> <main id="main-content" class="app-layout pb-12" data-pagefind-body> <h1 class="inline-block text-2xl font-bold text-accent sm:text-3xl" data-astro-transition-scope="astro-fam6wyqg-1"> Vue-cli3 Build Configuration Explained </h1> <div class="my-2 flex items-center gap-2"> <div class="flex items-center gap-x-2 opacity-80"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 min-w-5.5"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z" /><path d="M16 3v4" /><path d="M8 3v4" /><path d="M4 11h16" /><path d="M7 14h.013" /><path d="M10.01 14h.005" /><path d="M13.01 14h.005" /><path d="M16.015 14h.005" /><path d="M13.015 17h.005" /><path d="M7.01 17h.005" /><path d="M10.01 17h.005" /></svg>  <time class="text-sm sm:text-base" datetime="2019-06-13T00:00:00.000Z">12 Jun, 2019</time> </div> <span aria-hidden="true" class="max-sm:hidden hidden">|</span>  </div> <article id="article" class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"> <blockquote>
+<p>Badminton legend Lee Chong Wei retired today. May he conquer his illness and enjoy a happy life!</p>
+</blockquote>
+<h2 id="vue-cli-pros-and-cons">Vue-cli Pros and Cons</h2>
+<p>A friend once asked me, “What are the <code>advantages</code> of Vue-cli?” I answered:</p>
+<blockquote>
+<p>“The advantage is that it comes with a ton of built-in configuration.”</p>
+</blockquote>
+<p>Then he asked, “What are the <code>disadvantages</code>?” I replied:</p>
+<blockquote>
+<p>“The disadvantage is that it comes with a ton of built-in configuration.”</p>
+</blockquote>
+<p>Sounds like a classic <code>"live by the sword, die by the sword"</code> situation, doesn’t it? That’s exactly how it feels to me.<br></p>
+<p>Vue-cli integrates a massive amount of webpack configuration, with pre-configured <code>loader</code>, <code>babel</code>, and even <code>eslint</code>. For development, you can just write your code and run:</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="plaintext"><code><span class="line"><span>npm run serve</span></span></code></pre>
+<p>And you can see your page right away. It seems very convenient, but for beginners, it creates a <code>"knowing how but not why"</code> problem. That’s why the Vue official website has bold text in its Vue-cli introduction saying: “We <code>do not recommend</code> that beginners directly use <code>vue-cli</code>.”<br></p>
+<p>Because Vue-cli has done a massive amount of webpack configuration — over <code>2000</code> lines of config code:<br>
+(Including:</p>
+<ul>
+<li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-service/lib/config">webpack-chain config source code</a> — <code>784</code> lines</li>
+<li><a href="https://github.com/vuejs/vue-cli/blob/dev/packages/@vue/cli-service/lib/Service.js">vue-cli/packages/@vue/cli-service/lib/Service.js</a> — <code>423</code> lines</li>
+<li><a href="https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js">vue-cli/packages/@vue/cli-service/lib/options.js</a> — <code>145</code> lines</li>
+<li><a href="https://github.com/vuejs/vue-cli/blob/dev/packages/%40vue/cli-service/lib/options.js">webpack plugin config</a> — <code>731</code> lines)</li>
+</ul>
+<p>All of this is what makes development so convenient. But when I tried to modify its configuration, I discovered the CLI’s biggest gripe:</p>
+<blockquote>
+<p>Modifying it is truly painful!!</p>
+</blockquote>
+<p>This article focuses on analyzing Vue-cli’s custom webpack configuration:</p>
+<h2 id="vueconfigjs">vue.config.js</h2>
+<p>After running Vue-cli’s <code>init</code> command, you’ll notice there’s no webpack.config.js — only a <code>vue.config.js</code>. Basically all your webpack configuration goes into this file and gets merged into Vue-cli’s webpack config via <a href="https://github.com/survivejs/webpack-merge">webpack-merge</a>.</p>
+<h3 id="simple-configuration">Simple Configuration</h3>
+<p>The simplest way to adjust <code>webpack</code> configuration is to provide an object in the <code>configureWebpack</code> option in <code>vue.config.js</code>:</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// vue.config.js</span></span>
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">module</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">exports</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  configureWebpack</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    plugins</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> [</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#7FDBCA">      new</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic"> MyAwesomeWebpackPlugin</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">()</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">}</span></span></code></pre>
+<p>Here’s where it gets <code>tricky</code>!!! Because some variable names in <code>vue.config.js</code> differ from <code>webpack</code>, you might misconfigure things.</p>
+<blockquote>
+<p>Some <code>webpack</code> options are set based on values in <code>vue.config.js</code>, so you can’t modify them directly.
+For example, you should modify the <code>outputDir</code> option in <code>vue.config.js</code> rather than <code>output.path</code>;
+you should modify the <code>publicPath</code> option in <code>vue.config.js</code> rather than <code>output.publicPath</code>.
+This is because the values in <code>vue.config.js</code> are used in multiple places in the configuration to ensure everything works together properly.</p>
+</blockquote>
+<h3 id="chaining-advanced">Chaining (Advanced)</h3>
+<p>Modify configuration using <a href="https://github.com/neutrinojs/webpack-chain">webpack-chain</a>.</p>
+<blockquote>
+<p>When you plan to chain-access a specific <code>loader</code>, <code>vue inspect</code> is very helpful.</p>
+</blockquote>
+<h4 id="modifying-loader-options">Modifying Loader Options</h4>
+<blockquote>
+<p>For CSS-related <code>loader</code>s, we recommend using <code>css.loaderOptions</code> rather than directly chaining loaders. This is because each CSS file type has multiple rules, and <code>css.loaderOptions</code> ensures you can affect all rules from one place.</p>
+</blockquote>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// vue.config.js</span></span>
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">module</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">exports</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">  chainWebpack</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> config</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#7FDBCA;--shiki-dark-font-style:italic">    config</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#24292EFF;--shiki-dark:#BAEBE2">module</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">      .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">rule</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">vue</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">      .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">use</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">vue-loader</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">        .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">loader</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">vue-loader</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">        .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">tap</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">options</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">          // modify its options...</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">          return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> options</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        })</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">}</span></span></code></pre>
+<h4 id="replacing-a-loader-in-a-rule">Replacing a Loader in a Rule</h4>
+<p>If you want to replace an existing base loader, for example using <code>vue-svg-loader</code> for inline SVG files instead of loading the file:</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// vue.config.js</span></span>
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">module</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">exports</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">  chainWebpack</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> config</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA">    const</span><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic"> svgRule</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#7FDBCA;--shiki-dark-font-style:italic"> config</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#FAF39F;--shiki-dark-font-style:italic">module</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">rule</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">svg</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">    // Clear all existing loaders.</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">    // If you don't do this, the next loader will be appended after the existing loaders.</span></span>
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#7FDBCA;--shiki-dark-font-style:italic">    svgRule</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#FAF39F;--shiki-dark-font-style:italic">uses</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">clear</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">()</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">    // Add the replacement loader</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">    svgRule</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">      .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">use</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">vue-svg-loader</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">        .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">loader</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">vue-svg-loader</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">}</span></span></code></pre>
+<h4 id="modifying-plugin-options">Modifying Plugin Options</h4>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// vue.config.js</span></span>
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">module</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">exports</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">  chainWebpack</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> config</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">    config</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">      .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">plugin</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">html</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">      .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">tap</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">args</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">        return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> [</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">/* new arguments to pass to html-webpack-plugin's constructor */</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">]</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">      })</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">}</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// You need to be familiar with the webpack-chain API and read some source code</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// to make the most of this option, but it's more expressive and safer than</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// directly modifying webpack configuration.</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// For example, if you want to change index.html's default path from</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// /Users/username/proj/public/index.html to /Users/username/proj/app/templates/index.html,</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// you can refer to html-webpack-plugin to see the list of options you can pass in.</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// We can pass a new template path in the following configuration:</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// vue.config.js</span></span>
+<span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">module</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">exports</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">  chainWebpack</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> config</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">    config</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">      .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">plugin</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">html</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">      .</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">tap</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">args</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">        args</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">[</span><span style="--shiki-light:#1976D2;--shiki-dark:#F78C6C">0</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">]</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#24292EFF;--shiki-dark:#BAEBE2">template</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">/Users/username/proj/app/templates/index.html</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">        return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> args</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">      })</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">}</span></span></code></pre>
+<h3 id="inspecting-the-projects-webpack-configuration">Inspecting the Project’s Webpack Configuration</h3>
+<p>Here comes the main event!</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="sh"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">//package.json里面加入这句命令</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">"inspect"</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C5E478;--shiki-dark-font-style:italic">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> "</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">vue-cli-service inspect</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">"</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">//然后命令行里面</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">npm</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> run</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#D32F2F;--shiki-dark:#7FDBCA"> ></span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> output.js</span></span></code></pre>
+<p>You’ll find a new output.js file in your directory. Open it — <code>1155</code> lines of code. All the configuration is right there.
+There are also some more convenient commands:</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="sh"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># 只审查第一条规则</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">vue-cli-service</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> module.rules.0</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># 或者指向一个规则或插件的名字</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">vue-cli-service</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#2B5581;--shiki-dark:#82AAFF"> --rule</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> vue</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">vue-cli-service</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#2B5581;--shiki-dark:#82AAFF"> --plugin</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> html</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># 或者指向一个规则或插件的名字</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">vue-cli-service</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#2B5581;--shiki-dark:#82AAFF"> --rules</span></span>
+<span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">vue-cli-service</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#2B5581;--shiki-dark:#82AAFF"> --plugins</span></span></code></pre>
+<blockquote>
+<p>Of course, the recommended approach is to just use the first command <code>npm run inspect</code> to output everything and then <code>ctrl + F</code> to find what you need to change.<br>
+Yes, it’s that tedious.</p>
+</blockquote>
+<p>Here’s an example: if I want to modify the <code>CopyWebpackPlugin</code> plugin’s properties, it takes a <code>five-step process</code>:</p>
+<ol>
+<li>npm run inspect > output.js</li>
+<li>Find CopyWebpackPlugin’s name (modified by config) and existing parameters in output.js</li>
+<li>Modify the parameters in vue.config.js</li>
+<li>npm run inspect > output.js again to check if the new parameters were applied, or if you’re confident, skip to step five</li>
+<li>npm run build</li>
+</ol>
+<p>Let’s walk through the process:</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="sh"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">npm</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> run</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#D32F2F;--shiki-dark:#7FDBCA"> ></span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> output.js</span></span></code></pre>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">//找到CopyWebpackPlugin,注意下面的注释，这是这个插件在vue.config.js里面的新名字 config.plugin('copy')</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">/* config.plugin('copy') */</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#7FDBCA">  new</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic"> CopyWebpackPlugin</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    [</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">      {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        from</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">E:</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">web_pro</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">nr.os-ui</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">public</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"> // 拷贝哪里的文件</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        to</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">E:</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">web_pro</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">nr.os-ui</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">dist</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">     // 拷贝去何方</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        toType</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">dir</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">                         // 新建文件夹么</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        ignore</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> [                              </span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// 忽略哪些文件</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">          '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">.DS_Store</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        ]</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  )</span></span></code></pre>
+<p>What if I want to add files to ignore? Check the <a href="https://www.webpackjs.com/plugins/copy-webpack-plugin/">CopyWebpackPlugin official docs</a>.</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// vue.config.js 里面添加</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">chainWebpack</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> config</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#7FDBCA;--shiki-dark-font-style:italic"> config</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">plugin</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">copy</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">tap</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D9F5DD">(</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">args</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D9F5DD">)</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =></span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0">  args</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">[</span><span style="--shiki-light:#1976D2;--shiki-dark:#F78C6C">0</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">][</span><span style="--shiki-light:#1976D2;--shiki-dark:#F78C6C">0</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">]</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-light-font-style:inherit;--shiki-dark:#FAF39F;--shiki-dark-font-style:italic">ignore</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">push</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">output/**</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">)  </span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">//因为里面是个数组，这个数组是args[0]所以这个参数里面的第一个子元素是args[0][0]</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">  return</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D7DBE0"> args</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">})</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span></span></code></pre>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">//添加成功</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">/* config.plugin('copy') */</span></span>
+<span class="line"><span style="--shiki-light:#D32F2F;--shiki-dark:#7FDBCA">  new</span><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic"> CopyWebpackPlugin</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">(</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    [</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">      {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        from</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">E:</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">web_pro</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">nr.os-ui</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">public</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"> // 拷贝哪里的文件</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        to</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">E:</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">web_pro</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">nr.os-ui</span><span style="--shiki-light:#22863A;--shiki-dark:#F78C6C">\\</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">dist</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">     // 拷贝去何方</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        toType</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">dir</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">                         // 新建文件夹么</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        ignore</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> [                              </span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic">// 忽略哪些文件</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">          '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">.DS_Store</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#212121;--shiki-dark:#D6DEEB">,</span></span>
+<span class="line"><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">          '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">output/**</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">        ]</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">      }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    ]</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  )</span></span></code></pre>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="sh"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">npm</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> run</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> inspect</span><span style="--shiki-light:#D32F2F;--shiki-dark:#7FDBCA"> ></span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> output.js</span></span></code></pre>
+<p>Done! This is just so much fun (pain).</p>
+<h2 id="build">Build</h2>
+<h3 id="library">Library</h3>
+<p>First, you should learn about <a href="https://www.webpackjs.com/configuration/output/#output-library">webpack library-related concepts</a>.<br>
+Then you can use this command to build what you need:</p>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="sh"><code><span class="line"><span style="--shiki-light:#6F42C1;--shiki-light-font-style:inherit;--shiki-dark:#82AAFF;--shiki-dark-font-style:italic">vue-cli-service</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> build</span><span style="--shiki-light:#2B5581;--shiki-dark:#82AAFF"> --target</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> lib</span><span style="--shiki-light:#2B5581;--shiki-dark:#82AAFF"> --name</span><span style="--shiki-light:#2B5581;--shiki-dark:#ECC48D"> myLib</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> [entry]</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># File                     Size                     Gzipped</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># dist/myLib.umd.min.js    13.28 kb                 8.42 kb</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># dist/myLib.umd.js        20.95 kb                 10.22 kb</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># dist/myLib.common.js     20.57 kb                 10.09 kb</span></span>
+<span class="line"><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"># dist/myLib.css           0.33 kb                  0.23 kb</span></span></code></pre>
+<h4 id="vue-vs-jsts-entry-files">Vue vs. JS/TS Entry Files</h4>
+<blockquote>
+<p>When using a .vue file as the entry, your library will directly expose the Vue component itself, since the component is always the default export.
+However, when using a .js or .ts file as the entry, it may contain named exports, so the library will be exposed as a module.
+This means your library must be accessed via <code>window.yourLib.default</code> in a <code>UMD</code> build,
+or via <code>const myLib = require(‘mylib’).default</code> in a <code>CommonJS</code> build.
+If you don’t have any named exports and want to directly expose the default export, you can use the following <code>webpack</code> configuration in <code>vue.config.js</code>:</p>
+</blockquote>
+<pre class="astro-code astro-code-themes min-light night-owl" style="--shiki-light:#24292eff;--shiki-dark:#d6deeb;--shiki-light-bg:#ffffff;--shiki-dark-bg:#011627; overflow-x: auto;--file-name-offset: -0.75rem;" tabindex="0" data-language="js"><code><span class="line"><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">module</span><span style="--shiki-light:#24292EFF;--shiki-light-font-style:inherit;--shiki-dark:#C792EA;--shiki-dark-font-style:italic">.</span><span style="--shiki-light:#1976D2;--shiki-dark:#C5E478">exports</span><span style="--shiki-light:#D32F2F;--shiki-dark:#C792EA"> =</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  configureWebpack</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    output</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">      libraryExport</span><span style="--shiki-light:#D32F2F;--shiki-dark:#D6DEEB">:</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD"> '</span><span style="--shiki-light:#22863A;--shiki-dark:#ECC48D">mlLibrary</span><span style="--shiki-light:#22863A;--shiki-dark:#D9F5DD">'</span><span style="--shiki-light:#C2C3C5;--shiki-light-font-style:inherit;--shiki-dark:#637777;--shiki-dark-font-style:italic"> //你得库的名字</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">  }</span></span>
+<span class="line"><span style="--shiki-light:#24292EFF;--shiki-dark:#D6DEEB">}</span></span></code></pre>
+<h3 id="web-components">Web Components</h3>
+<p><code>Web Components</code> are not compatible with IE11 and below, so I won’t cover them here. You can learn about them on your own. <a href="https://cli.vuejs.org/zh/guide/build-targets.html#vue-vs-js-ts-%E5%85%A5%E5%8F%A3%E6%96%87%E4%BB%B6">Link</a></p> </article> <hr class="my-8 border-dashed">  <ul class="mt-4 mb-8 flex flex-wrap gap-4 sm:my-8"> <li> <a href="/tags/vue/" class="flex items-center gap-0.5 border-b-2 border-dashed border-foreground hover:-mt-0.5 hover:border-accent hover:text-accent focus-visible:border-none focus-visible:text-accent text-sm" data-astro-transition-scope="astro-36ssibgs-2"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 size-4"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 9l14 0" /><path d="M5 15l14 0" /><path d="M11 4l-4 16" /><path d="M17 4l-4 16" /></svg> vue </a> </li><li> <a href="/tags/vue-cli/" class="flex items-center gap-0.5 border-b-2 border-dashed border-foreground hover:-mt-0.5 hover:border-accent hover:text-accent focus-visible:border-none focus-visible:text-accent text-sm" data-astro-transition-scope="astro-36ssibgs-3"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 size-4"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 9l14 0" /><path d="M5 15l14 0" /><path d="M11 4l-4 16" /><path d="M17 4l-4 16" /></svg> vue-cli </a> </li><li> <a href="/tags/webpack/" class="flex items-center gap-0.5 border-b-2 border-dashed border-foreground hover:-mt-0.5 hover:border-accent hover:text-accent focus-visible:border-none focus-visible:text-accent text-sm" data-astro-transition-scope="astro-36ssibgs-4"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="opacity-80 size-4"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 9l14 0" /><path d="M5 15l14 0" /><path d="M11 4l-4 16" /><path d="M17 4l-4 16" /></svg> webpack </a> </li> </ul> <div id="btt-btn-container" class="fixed end-4 bottom-8 z-50 md:sticky md:end-auto md:float-end md:me-1 translate-y-14 opacity-0 transition duration-500"> <button data-button="back-to-top" class="group relative bg-background px-2 py-1 size-14 rounded-full shadow-xl md:h-8 md:w-fit md:rounded-md md:shadow-none md:focus-visible:rounded-none md:bg-background/35 md:bg-clip-padding md:backdrop-blur-lg"> <span id="progress-indicator" class="absolute inset-0 -z-10 block size-14 scale-110 rounded-full bg-transparent md:hidden md:h-8 md:rounded-md"></span> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block rotate-90 md:hidden"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg> <span class="sr-only text-sm group-hover:text-accent md:not-sr-only"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-4"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 5l0 14" /><path d="M16 9l-4 -4" /><path d="M8 9l4 -4" /></svg>
+Back To Top
+</span> </button> </div> <script data-astro-rerun>
+  /** Scrolls the document to the top when
+   * the "Back to Top" button is clicked. */
+  function backToTop() {
+    const rootElement = document.documentElement;
+    const btnContainer = document.querySelector("#btt-btn-container");
+    const backToTopBtn = document.querySelector("[data-button='back-to-top']");
+    const progressIndicator = document.querySelector("#progress-indicator");
+
+    if (!rootElement || !btnContainer || !backToTopBtn || !progressIndicator)
+      return;
+
+    // Attach click event handler for back-to-top button
+    backToTopBtn.addEventListener("click", () => {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+
+    // Handle button visibility according to scroll position
+    let lastVisible = null;
+    function handleScroll() {
+      const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+      const scrollTop = rootElement.scrollTop;
+      const scrollPercent = Math.floor((scrollTop / scrollTotal) * 100);
+
+      progressIndicator.style.setProperty(
+        "background-image",
+        `conic-gradient(var(--accent), var(--accent) ${scrollPercent}%, transparent ${scrollPercent}%)`
+      );
+
+      const isVisible = scrollTop / scrollTotal > 0.3;
+
+      if (isVisible !== lastVisible) {
+        btnContainer.classList.toggle("opacity-100", isVisible);
+        btnContainer.classList.toggle("translate-y-0", isVisible);
+        btnContainer.classList.toggle("opacity-0", !isVisible);
+        btnContainer.classList.toggle("translate-y-14", !isVisible);
+        lastVisible = isVisible;
+      }
+    }
+
+    let ticking = false;
+    document.addEventListener("scroll", () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+  }
+  backToTop();
+</script> <div class="flex flex-none flex-col items-center justify-center gap-1 md:items-start"><span class="italic">Share this post on:</span><div class="text-center"><a href="https://wa.me/?text=https://www.adamma.me/blog/posts/vue-cli3-webpack/" title="Share this post via WhatsApp" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg><span class="sr-only">Share this post via WhatsApp</span> </a><a href="https://www.facebook.com/sharer.php?u=https://www.adamma.me/blog/posts/vue-cli3-webpack/" title="Share this post on Facebook" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg><span class="sr-only">Share this post on Facebook</span> </a><a href="https://x.com/intent/post?url=https://www.adamma.me/blog/posts/vue-cli3-webpack/" title="Share this post on X" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg><span class="sr-only">Share this post on X</span> </a><a href="https://t.me/share/url?url=https://www.adamma.me/blog/posts/vue-cli3-webpack/" title="Share this post via Telegram" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4" /></svg><span class="sr-only">Share this post via Telegram</span> </a><a href="https://pinterest.com/pin/create/button/?url=https://www.adamma.me/blog/posts/vue-cli3-webpack/" title="Share this post on Pinterest" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 20l4 -9" /><path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7" /><path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" /></svg><span class="sr-only">Share this post on Pinterest</span> </a><a href="mailto:?subject=See%20this%20post&#38;body=https://www.adamma.me/blog/posts/vue-cli3-webpack/" title="Share this post via email" class="group inline-flex items-center gap-1 hover:text-accent scale-90 p-2 hover:rotate-6 sm:p-1"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg><span class="sr-only">Share this post via email</span> </a></div></div> <hr class="my-6 border-dashed"> <!-- Previous/Next Post Buttons --> <div data-pagefind-ignore class="grid grid-cols-1 gap-6 sm:grid-cols-2"> <a href="/blog/posts/vue-route-problems" class="flex w-full gap-1 hover:opacity-75"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block flex-none rtl:rotate-180"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M15 6l-6 6l6 6" /></svg> <div> <span>Previous Post</span> <div class="text-sm text-accent/85">Vue Route Pitfalls</div> </div> </a> <a href="/blog/posts/python-ticket" class="flex w-full justify-end gap-1 text-end hover:opacity-75 sm:col-start-2"> <div> <span>Next Post</span> <div class="text-sm text-accent/85">Python -- Ticket Grabbing Bot</div> </div> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block flex-none rtl:rotate-180"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 6l6 6l-6 6" /></svg> </a> </div> </main> <footer class="app-layout mt-auto"> <div class="py-6 sm:py-4 border-t border-border flex flex-col items-center justify-between sm:flex-row-reverse"> <div class="flex flex-wrap items-center gap-1"> <a href="https://github.com/adamma1024" title="Adam's Blog on GitHub" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> <span class="sr-only">Adam&#39;s Blog on GitHub</span>  </a><a href="https://twitter.com/adamma1024" title="Adam's Blog on X" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" /></svg> <span class="sr-only">Adam&#39;s Blog on X</span>  </a><a href="https://www.linkedin.com/in/adamma1024/" title="Adam's Blog on LinkedIn" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M8 11v5" /><path d="M8 8v.01" /><path d="M12 16v-5" /><path d="M16 16v-3a2 2 0 1 0 -4 0" /><path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" /></svg> <span class="sr-only">Adam&#39;s Blog on LinkedIn</span>  </a><a href="mailto:adamma2048@gmail.com" title="Send an email to Adam's Blog" class="group inline-flex items-center gap-1 hover:text-accent p-2 hover:rotate-6 sm:p-1">  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block size-6 scale-125 fill-transparent stroke-current stroke-2 opacity-90 group-hover:fill-transparent sm:scale-110"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg> <span class="sr-only">Send an email to Adam&#39;s Blog</span>  </a> </div> <div class="my-2 flex flex-col items-center whitespace-nowrap sm:flex-row"> <span>Copyright &#169; 2026</span> <span class="hidden sm:inline">&nbsp;|&nbsp;</span> <span>All rights reserved.</span> </div> </div> </footer>  <!-- Load full theme logic --> <script type="module">const d="theme",r="light",m="dark";function i(){const e=localStorage.getItem(d);return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?m:r)}let t=window.theme?.themeValue??i();function c(){localStorage.setItem(d,t),o()}function o(){document.firstElementChild?.setAttribute("data-theme",t),document.querySelector("#theme-btn")?.setAttribute("aria-label",t);const e=document.body;if(e){const n=window.getComputedStyle(e).backgroundColor;document.querySelector("meta[name='theme-color']")?.setAttribute("content",n)}}window.theme?(window.theme.setPreference=c,window.theme.reflectPreference=o):window.theme={themeValue:t,setPreference:c,reflectPreference:o,getTheme:()=>t,setTheme:e=>{t=e}};o();function s(){o(),document.querySelector("#theme-btn")?.addEventListener("click",()=>{t=t===r?m:r,window.theme?.setTheme(t),c()})}s();document.addEventListener("astro:after-swap",s);document.addEventListener("astro:before-swap",e=>{const a=e,n=document.querySelector("meta[name='theme-color']")?.getAttribute("content");n&&a.newDocument.querySelector("meta[name='theme-color']")?.setAttribute("content",n)});window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",({matches:e})=>{t=e?m:r,window.theme?.setTheme(t),c()});</script> </body> </html> <script data-astro-rerun>
+  /** Create a progress indicator
+   *  at the top */
+  function createProgressBar() {
+    // Create the main container div
+    const progressContainer = document.createElement("div");
+    progressContainer.className =
+      "progress-container fixed top-0 z-10 h-1 w-full bg-background";
+
+    // Create the progress bar div
+    const progressBar = document.createElement("div");
+    progressBar.className = "progress-bar h-1 w-0 bg-accent";
+    progressBar.id = "myBar";
+
+    // Append the progress bar to the progress container
+    progressContainer.appendChild(progressBar);
+
+    // Append the progress container to the document body or any other desired parent element
+    document.body.appendChild(progressContainer);
+  }
+  createProgressBar();
+
+  /** Update the progress bar
+   *  when user scrolls */
+  function updateScrollProgress() {
+    document.addEventListener("scroll", () => {
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (document) {
+        const myBar = document.getElementById("myBar");
+        if (myBar) {
+          myBar.style.width = scrolled + "%";
+        }
+      }
+    });
+  }
+  updateScrollProgress();
+
+  /** Attaches links to headings in the document,
+   *  allowing sharing of sections easily */
+  function addHeadingLinks() {
+    const headings = Array.from(
+      document.querySelectorAll("h2, h3, h4, h5, h6")
+    );
+    for (const heading of headings) {
+      heading.classList.add("group");
+      const link = document.createElement("a");
+      link.className =
+        "heading-link ms-2 no-underline opacity-75 md:opacity-0 md:group-hover:opacity-100 md:focus:opacity-100";
+      link.href = "#" + heading.id;
+
+      const span = document.createElement("span");
+      span.ariaHidden = "true";
+      span.innerText = "#";
+      link.appendChild(span);
+      heading.appendChild(link);
+    }
+  }
+  addHeadingLinks();
+
+  /** Attaches copy buttons to code blocks in the document,
+   * allowing users to copy code easily. */
+  function attachCopyButtons() {
+    const copyButtonLabel = "Copy";
+    const codeBlocks = Array.from(document.querySelectorAll("pre"));
+
+    for (const codeBlock of codeBlocks) {
+      const wrapper = document.createElement("div");
+      wrapper.style.position = "relative";
+
+      // Check if --file-name-offset custom property exists
+      const computedStyle = getComputedStyle(codeBlock);
+      const hasFileNameOffset =
+        computedStyle.getPropertyValue("--file-name-offset").trim() !== "";
+
+      // Determine the top positioning class
+      const topClass = hasFileNameOffset
+        ? "top-(--file-name-offset)"
+        : "-top-3";
+
+      const copyButton = document.createElement("button");
+      copyButton.className = `copy-code absolute end-3 ${topClass} rounded bg-muted border border-muted px-2 py-1 text-xs leading-4 text-foreground font-medium`;
+      copyButton.innerHTML = copyButtonLabel;
+      codeBlock.setAttribute("tabindex", "0");
+      codeBlock.appendChild(copyButton);
+
+      // wrap codebock with relative parent element
+      codeBlock?.parentNode?.insertBefore(wrapper, codeBlock);
+      wrapper.appendChild(codeBlock);
+
+      copyButton.addEventListener("click", async () => {
+        await copyCode(codeBlock, copyButton);
+      });
+    }
+
+    async function copyCode(block, button) {
+      const code = block.querySelector("code");
+      const text = code?.innerText;
+
+      await navigator.clipboard.writeText(text ?? "");
+
+      // visual feedback that task is completed
+      button.innerText = "Copied";
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel;
+      }, 700);
+    }
+  }
+  attachCopyButtons();
+
+  /* Go to page start after page swap */
+  document.addEventListener("astro:after-swap", () =>
+    window.scrollTo({ left: 0, top: 0, behavior: "instant" })
+  );
+</script>

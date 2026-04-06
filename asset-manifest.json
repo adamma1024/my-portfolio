@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.e6a6f007.css",
-    "main.js": "./static/js/main.155ace15.js",
+    "main.css": "./static/css/main.a378b571.css",
+    "main.js": "./static/js/main.73c48873.js",
     "static/media/portfolio.gif": "./static/media/portfolio.ed6c89f1485f23014ebd.gif",
+    "static/media/gpt_withTeeth.png": "./static/media/gpt_withTeeth.4c78e7ae22af7b1f89ba.png",
     "static/media/fa-solid-900.svg": "./static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "./static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
     "static/media/tiktok_logo.png": "./static/media/tiktok_logo.bf41765c122d4b0f3fee.png",
@@ -66,11 +67,11 @@
     "static/media/googleAssistant.svg": "./static/media/googleAssistant.1c2312558eb2e5f04a45.svg",
     "static/media/talksCardBackAlt.svg": "./static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "./static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
-    "main.e6a6f007.css.map": "./static/css/main.e6a6f007.css.map",
-    "main.155ace15.js.map": "./static/js/main.155ace15.js.map"
+    "main.a378b571.css.map": "./static/css/main.a378b571.css.map",
+    "main.73c48873.js.map": "./static/js/main.73c48873.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6a6f007.css",
-    "static/js/main.155ace15.js"
+    "static/css/main.a378b571.css",
+    "static/js/main.73c48873.js"
   ]
 }
