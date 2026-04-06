@@ -9,7 +9,7 @@
     "build": "npm run build:blog && npm run build:portfolio",
     "predeploy": "npm run build",
     "fetch_github": "node git_data_fetcher.mjs",
-    "deploy": "cp CNAME build/CNAME && gh-pages -b gh-pages -d build",
+    "deploy": "cp CNAME build/CNAME && gh-pages -b gh-pages -d build --dotfiles",
     "deploy_after_fetch": "pnpm run fetch_github && pnpm run deploy",
     "eject": "react-scripts eject",
     "dev:blog": "cd /Users/malin/code/web-pro/ml-blog-astro && npm run dev -- --port 3003",
