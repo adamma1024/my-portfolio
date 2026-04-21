@@ -267,10 +267,16 @@ async function processOrgData() {
     const data = await fetchGitHubData("Organization", queries.org);
     const orgs = data.data.user.repositoriesContributedTo.nodes;
 
+    const seen = new Set();
     const newOrgs = {
       data: orgs
         .filter(org => org && org.owner && org.owner.__typename === "Organization")
         .map(org => org.owner)
+        .filter(org => {
+          if (seen.has(org.login)) return false;
+          seen.add(org.login);
+          return true;
+        })
     };
 
     await fs.promises.writeFile(
@@ -283,49 +289,29 @@ async function processOrgData() {
   }
 }
 
-// Process Pinned Projects data + org repos
+// Process Pinned Projects data (preserves GitHub profile pinned order)
 async function processPinnedProjectsData() {
   try {
     const data = await fetchGitHubData("Pinned Projects", queries.pinned_projects);
-    const pinnedProjects = data.data.user.pinnedItems.nodes;
-
-    // Fetch DreamRealized org repos
-    let orgProjects = [];
-    try {
-      const orgData = await fetchGitHubData("Org Repos", queries.org_repos);
-      orgProjects = orgData.data.organization.repositories.nodes;
-      console.log(`  Found ${orgProjects.length} DreamRealized org repos`);
-    } catch (e) {
-      console.warn("  Could not fetch org repos:", e.message);
-    }
-
-    // Merge: org repos first, then pinned (deduplicate by name)
-    const seen = new Set();
-    const allProjects = [...orgProjects, ...pinnedProjects].filter(p => {
-      if (seen.has(p.name)) return false;
-      seen.add(p.name);
-      return true;
-    });
-
-    const formatProject = project => ({
-      ...project,
-      languages: project.languages.nodes
-        .filter(lang => lang.name in languages_icons)
-        .map(lang => ({
-          name: lang.name,
-          iconifyClass: languages_icons[lang.name]
-        }))
-    });
+    const projects = data.data.user.pinnedItems.nodes;
 
     const newProjects = {
-      data: allProjects.map(formatProject)
+      data: projects.map(project => ({
+        ...project,
+        languages: project.languages.nodes
+          .filter(lang => lang.name in languages_icons)
+          .map(lang => ({
+            name: lang.name,
+            iconifyClass: languages_icons[lang.name]
+          }))
+      }))
     };
 
     await fs.promises.writeFile(
       "./src/shared/opensource/projects.json",
       JSON.stringify(newProjects, null, 2)
     );
-    console.log("✓ Pinned Projects + Org Repos data saved successfully\n");
+    console.log("✓ Pinned Projects data saved successfully\n");
   } catch (error) {
     console.error("Failed to process Pinned Projects data:", error.message);
   }
