@@ -1,1 +1,2424 @@
-{"data":[{"id":"PR_kwDOMuS7r85-ZAM6","title":"[Fix][CD]: Add sudo before the docker commands ","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/37","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4","url":"https://github.com/adamma1024","login":"adamma1024"},"createdAt":"2024-10-12T02:03:23Z","number":37,"changedFiles":1,"additions":4,"deletions":4,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r85-Yv_A","title":"[Feat](configuration): add auto deploy","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/36","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4","url":"https://github.com/adamma1024","login":"adamma1024"},"createdAt":"2024-10-11T23:10:26Z","number":36,"changedFiles":5,"additions":110,"deletions":3,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r85-XfpA","title":"[Feat](configuration): CD scripts","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/35","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4","url":"https://github.com/adamma1024","login":"adamma1024"},"createdAt":"2024-10-11T17:29:59Z","number":35,"changedFiles":6,"additions":98,"deletions":4,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r859cI7j","title":"[Feat](configuration): Integrate vitest and ci","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/29","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4","url":"https://github.com/Linchen-Xu","login":"Linchen-Xu"},"createdAt":"2024-10-03T00:23:04Z","number":29,"changedFiles":13,"additions":531,"deletions":34,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r859Mrqd","title":"[Feat][Configuration] Integrate Docker for FE and create a docker-compose file","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/24","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4","url":"https://github.com/Linchen-Xu","login":"Linchen-Xu"},"createdAt":"2024-10-01T04:33:51Z","number":24,"changedFiles":10,"additions":68,"deletions":4,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r859CjCJ","title":"[Feat][Configuration] Add a Conventional Commit plugin and update the MD files","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/22","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4","url":"https://github.com/Linchen-Xu","login":"Linchen-Xu"},"createdAt":"2024-09-29T22:12:21Z","number":22,"changedFiles":8,"additions":1299,"deletions":60,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r8588sSt","title":"Update the iteration0 branch","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/21","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4","url":"https://github.com/Linchen-Xu","login":"Linchen-Xu"},"createdAt":"2024-09-27T17:29:09Z","number":21,"changedFiles":7,"additions":78,"deletions":1,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r8588mzL","title":"Sync the Main to the iteration0","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/20","state":"CLOSED","mergedBy":null,"createdAt":"2024-09-27T17:14:31Z","number":20,"changedFiles":13,"additions":224,"deletions":4,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r8581Bqg","title":"Cherry-pick commits to release branch","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/13","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4","url":"https://github.com/adamma1024","login":"adamma1024"},"createdAt":"2024-09-26T17:33:30Z","number":13,"changedFiles":3,"additions":90,"deletions":3,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r858t4Rx","title":"[Feat][Infra] Update the README.md","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/11","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/52944194?v=4","url":"https://github.com/Stanford997","login":"Stanford997"},"createdAt":"2024-09-25T22:23:34Z","number":11,"changedFiles":3,"additions":90,"deletions":3,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r858ULmh","title":"[Feat][FE] Add input element and upload file button","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/6","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4","url":"https://github.com/Linchen-Xu","login":"Linchen-Xu"},"createdAt":"2024-09-23T05:42:55Z","number":6,"changedFiles":10,"additions":773,"deletions":10,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r858Q2bE","title":"[Infra][Fix] Remove the empty fields in the issue template files","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/4","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4","url":"https://github.com/adamma1024","login":"adamma1024"},"createdAt":"2024-09-22T05:21:05Z","number":4,"changedFiles":2,"additions":0,"deletions":2,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r858QayQ","title":"[Infra][Feat] Create ISSUE and PR Templates","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/3","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4","url":"https://github.com/adamma1024","login":"adamma1024"},"createdAt":"2024-09-21T21:02:53Z","number":3,"changedFiles":3,"additions":120,"deletions":0,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMuS7r858QYh9","title":"[FE][Feat] Draw a basic layout and add some new files","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/2","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4","url":"https://github.com/adamma1024","login":"adamma1024"},"createdAt":"2024-09-21T20:24:36Z","number":2,"changedFiles":22,"additions":2593,"deletions":0,"baseRepository":{"name":"seprojects-cs673a2f24_team5","url":"https://github.com/BUMETCS673/seprojects-cs673a2f24_team5","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOMqmvZM58QYHh","title":"[FE][Feat] Basic Layout and some new files","url":"https://github.com/BUMETCS673/bumetcs673f24-seprojects-GroupProjectTemplate/pull/19","state":"CLOSED","mergedBy":null,"createdAt":"2024-09-21T20:17:02Z","number":19,"changedFiles":25,"additions":2615,"deletions":0,"baseRepository":{"name":"bumetcs673f24-seprojects-GroupProjectTemplate","url":"https://github.com/BUMETCS673/bumetcs673f24-seprojects-GroupProjectTemplate","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/65134126?v=4","login":"BUMETCS673","url":"https://github.com/BUMETCS673"}}},{"id":"PR_kwDOImps-c579a7r","title":"Upgrade the gitui to 0.26.3","url":"https://github.com/mason-org/mason-registry/pull/7261","state":"OPEN","mergedBy":null,"createdAt":"2024-09-18T22:31:28Z","number":7261,"changedFiles":289,"additions":713,"deletions":2015,"baseRepository":{"name":"mason-registry","url":"https://github.com/mason-org/mason-registry","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/119523708?v=4","login":"mason-org","url":"https://github.com/mason-org"}}},{"id":"PR_kwDOGv5Pvs5TRKhN","title":"[Feat] Integrate version for cohere","url":"https://github.com/jmilldotdev/obsidian-gpt/pull/6","state":"OPEN","mergedBy":null,"createdAt":"2023-06-18T06:21:24Z","number":6,"changedFiles":2,"additions":28,"deletions":3,"baseRepository":{"name":"obsidian-gpt","url":"https://github.com/jmilldotdev/obsidian-gpt","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/33093632?u=d97c0f530f05d2436d0958b2433c70dc5de14483&v=4","login":"jmilldotdev","url":"https://github.com/jmilldotdev"}}},{"id":"PR_kwDODZdBO84ue9jt","title":"fix: 修复 47 全排列 的拼写错误 typo","url":"https://github.com/youngyangyang04/leetcode-master/pull/906","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/8636020?u=bfb439d6152b4aaf21a79b6ddfff4df1c1e24818&v=4","url":"https://github.com/youngyangyang04","login":"youngyangyang04"},"createdAt":"2021-11-13T09:44:23Z","number":906,"changedFiles":1,"additions":1,"deletions":1,"baseRepository":{"name":"leetcode-master","url":"https://github.com/youngyangyang04/leetcode-master","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/8636020?u=bfb439d6152b4aaf21a79b6ddfff4df1c1e24818&v=4","login":"youngyangyang04","url":"https://github.com/youngyangyang04"}}},{"id":"MDExOlB1bGxSZXF1ZXN0NjE2NTQ3OTM5","title":"feat: 增加阻止原生点击事件","url":"https://github.com/view-design/ViewUI/pull/873","state":"CLOSED","mergedBy":null,"createdAt":"2021-04-16T05:35:55Z","number":873,"changedFiles":1,"additions":3,"deletions":1,"baseRepository":{"name":"ViewUI","url":"https://github.com/view-design/ViewUI","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/54535603?v=4","login":"view-design","url":"https://github.com/view-design"}}},{"id":"MDExOlB1bGxSZXF1ZXN0NjE2NTQ1ODY4","title":"feat: #871 Dropdown 在 transfer 时, 极难控制原生点击事件冒泡","url":"https://github.com/view-design/ViewUI/pull/872","state":"CLOSED","mergedBy":null,"createdAt":"2021-04-16T05:31:19Z","number":872,"changedFiles":1,"additions":8,"deletions":1,"baseRepository":{"name":"ViewUI","url":"https://github.com/view-design/ViewUI","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/54535603?v=4","login":"view-design","url":"https://github.com/view-design"}}},{"id":"MDExOlB1bGxSZXF1ZXN0NjEzMDI1MTg0","title":"Wrong Annotation, I fixed it and add W3C doc link","url":"https://github.com/mdn/translated-content/pull/469","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/165936?v=4","url":"https://github.com/irvin","login":"irvin"},"createdAt":"2021-04-11T07:26:25Z","number":469,"changedFiles":1,"additions":1,"deletions":1,"baseRepository":{"name":"translated-content","url":"https://github.com/mdn/translated-content","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/7565578?v=4","login":"mdn","url":"https://github.com/mdn"}}},{"id":"MDExOlB1bGxSZXF1ZXN0NDU1MDUyNzA5","title":"fix: 527","url":"https://github.com/mathjax/MathJax-src/pull/528","state":"CLOSED","mergedBy":null,"createdAt":"2020-07-22T11:17:24Z","number":528,"changedFiles":1,"additions":1,"deletions":1,"baseRepository":{"name":"MathJax-src","url":"https://github.com/mathjax/MathJax-src","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/252187?v=4","login":"mathjax","url":"https://github.com/mathjax"}}},{"id":"MDExOlB1bGxSZXF1ZXN0Mzc1NTQzMzA0","title":"#317 解决 groupOptions 和 filterable同时为true时 value错误","url":"https://github.com/view-design/ViewUI/pull/326","state":"CLOSED","mergedBy":null,"createdAt":"2020-02-14T19:38:21Z","number":326,"changedFiles":0,"additions":0,"deletions":0,"baseRepository":{"name":"ViewUI","url":"https://github.com/view-design/ViewUI","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/54535603?v=4","login":"view-design","url":"https://github.com/view-design"}}},{"id":"MDExOlB1bGxSZXF1ZXN0Mzc1NTE2Mjk4","title":"#317 解决 groupOptions 和 filterable同时为true时 value错误","url":"https://github.com/view-design/ViewUI/pull/325","state":"CLOSED","mergedBy":null,"createdAt":"2020-02-14T18:29:13Z","number":325,"changedFiles":1,"additions":6,"deletions":1,"baseRepository":{"name":"ViewUI","url":"https://github.com/view-design/ViewUI","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/54535603?v=4","login":"view-design","url":"https://github.com/view-design"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjY4MjM5OTMz","title":"Fixed #5572","url":"https://github.com/iview/iview/pull/5574","state":"CLOSED","mergedBy":null,"createdAt":"2019-04-08T08:51:03Z","number":5574,"changedFiles":7,"additions":126,"deletions":18,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjU4NzU1MDIz","title":"#5382 增加全局变量 maskClosable 用以全局设置 Modal 模态窗口 是否点击遮罩层关闭","url":"https://github.com/iview/iview/pull/5383","state":"CLOSED","mergedBy":null,"createdAt":"2019-03-06T15:03:19Z","number":5383,"changedFiles":2,"additions":5,"deletions":2,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjMzMTMwMDAz","title":"Tree add checkStrictly prop","url":"https://github.com/iview/iview/pull/4893","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/5370542?u=5bd7e0f1b3bdf549ed2262d2135963b7535e3a9c&v=4","url":"https://github.com/icarusion","login":"icarusion"},"createdAt":"2018-11-23T08:21:17Z","number":4893,"changedFiles":1,"additions":7,"deletions":1,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjMxNzM0NTUw","title":"tree on-select-change/on-check-change add node","url":"https://github.com/iview/iview/pull/4850","state":"MERGED","mergedBy":{"avatarUrl":"https://avatars.githubusercontent.com/u/5370542?u=5bd7e0f1b3bdf549ed2262d2135963b7535e3a9c&v=4","url":"https://github.com/icarusion","login":"icarusion"},"createdAt":"2018-11-17T15:42:13Z","number":4850,"changedFiles":1,"additions":2,"deletions":2,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjMxMDg1MjQz","title":"tree node on-select-change return node bot nodes","url":"https://github.com/iview/iview/pull/4841","state":"CLOSED","mergedBy":null,"createdAt":"2018-11-15T06:43:05Z","number":4841,"changedFiles":1,"additions":2,"deletions":2,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjMxMDU5Njg1","title":"Tree node add selectable","url":"https://github.com/iview/iview/pull/4838","state":"CLOSED","mergedBy":null,"createdAt":"2018-11-15T03:49:49Z","number":4838,"changedFiles":1,"additions":1,"deletions":1,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjMwODY3Njg0","title":"Tree node add selectable ","url":"https://github.com/iview/iview/pull/4834","state":"CLOSED","mergedBy":null,"createdAt":"2018-11-14T15:04:32Z","number":4834,"changedFiles":3,"additions":4,"deletions":3,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjMwODU0MzI4","title":"Tree node add selectable ","url":"https://github.com/iview/iview/pull/4833","state":"CLOSED","mergedBy":null,"createdAt":"2018-11-14T14:26:58Z","number":4833,"changedFiles":3,"additions":4,"deletions":3,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjE5MTI0Nzk4","title":"Table add on-select-all-cancel event","url":"https://github.com/iview/iview/pull/4601","state":"CLOSED","mergedBy":null,"createdAt":"2018-09-29T04:32:27Z","number":4601,"changedFiles":3,"additions":5,"deletions":2,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjExNDcxNDc5","title":"modal esc event stopPropagation","url":"https://github.com/iview/iview/pull/4386","state":"CLOSED","mergedBy":null,"createdAt":"2018-08-28T15:49:51Z","number":4386,"changedFiles":1,"additions":1,"deletions":0,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjExNDYyOTc4","title":"modal Esc event need stopPropagation","url":"https://github.com/iview/iview/pull/4385","state":"CLOSED","mergedBy":null,"createdAt":"2018-08-28T15:25:36Z","number":4385,"changedFiles":2,"additions":4,"deletions":1,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjEwNzYwNzUy","title":"直接修改tree  on-select-change/ on-check-change 返回值  为  node","url":"https://github.com/iview/iview/pull/4358","state":"CLOSED","mergedBy":null,"createdAt":"2018-08-24T14:41:09Z","number":4358,"changedFiles":2,"additions":3,"deletions":2,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}},{"id":"MDExOlB1bGxSZXF1ZXN0MjEwNzU4MjU2","title":"树控件新增on-check和on-select事件用来返回被修改状态的node","url":"https://github.com/iview/iview/pull/4357","state":"CLOSED","mergedBy":null,"createdAt":"2018-08-24T14:32:07Z","number":4357,"changedFiles":2,"additions":5,"deletions":3,"baseRepository":{"name":"iview","url":"https://github.com/iview/iview","owner":{"avatarUrl":"https://avatars.githubusercontent.com/u/20693613?v=4","login":"iview","url":"https://github.com/iview"}}}],"open":2,"closed":18,"merged":17,"totalCount":37}
+{
+  "data": [
+    {
+      "id": "PR_kwDOOwILt86prtQb",
+      "title": "feat: config.jsonc & container of iframe",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/76",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-09-21T04:58:46Z",
+      "number": 76,
+      "changedFiles": 16,
+      "additions": 4728,
+      "deletions": 1046,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86pZoSf",
+      "title": "fix: image webp",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/75",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-09-19T01:46:27Z",
+      "number": 75,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86pZkYf",
+      "title": "feat: remove qdrant data records",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/74",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-09-19T01:38:50Z",
+      "number": 74,
+      "changedFiles": 1,
+      "additions": 2,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86pZfbk",
+      "title": "feat: Add RAG uploader page and refine the RAG uploading logic",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/73",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-09-19T01:24:28Z",
+      "number": 73,
+      "changedFiles": 16,
+      "additions": 470,
+      "deletions": 630,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86oWdSv",
+      "title": "fix: analyze if the questions or images are related to the themes",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/71",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-09-13T02:19:01Z",
+      "number": 71,
+      "changedFiles": 5,
+      "additions": 77,
+      "deletions": 8,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86mFXyO",
+      "title": "fix: fix the tts effects",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/70",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-30T02:15:48Z",
+      "number": 70,
+      "changedFiles": 1,
+      "additions": 259,
+      "deletions": 205,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86mFDQy",
+      "title": "fix: optimize the tts effects",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/69",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-30T00:59:03Z",
+      "number": 69,
+      "changedFiles": 2,
+      "additions": 198,
+      "deletions": 98,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86l7C33",
+      "title": "fix: move tts to fe",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/67",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-29T05:39:29Z",
+      "number": 67,
+      "changedFiles": 10,
+      "additions": 528,
+      "deletions": 431,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86lqjuV",
+      "title": "feat: add the tts feature",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/66",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-27T19:20:50Z",
+      "number": 66,
+      "changedFiles": 7,
+      "additions": 457,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86lIb8T",
+      "title": "feat: enhance the mcp ability",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/65",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-25T03:36:37Z",
+      "number": 65,
+      "changedFiles": 4,
+      "additions": 967,
+      "deletions": 25,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86jUehf",
+      "title": "fix: string verification",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/63",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-12T17:48:02Z",
+      "number": 63,
+      "changedFiles": 1,
+      "additions": 23,
+      "deletions": 21,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86jIWI6",
+      "title": "feat: demo",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/62",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-11T20:46:38Z",
+      "number": 62,
+      "changedFiles": 7,
+      "additions": 945,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86jITEI",
+      "title": "feat: add cleanContext btn & Tooltips",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/61",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-11T20:40:40Z",
+      "number": 61,
+      "changedFiles": 11,
+      "additions": 262,
+      "deletions": 55,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86jFgat",
+      "title": "fix: loading Message",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/59",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-11T16:23:15Z",
+      "number": 59,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86i9Wwp",
+      "title": "fix: loading Message",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/58",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-11T02:26:41Z",
+      "number": 58,
+      "changedFiles": 3,
+      "additions": 11,
+      "deletions": 11,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86i8rm1",
+      "title": "fix: loading Message",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/57",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-10T22:07:02Z",
+      "number": 57,
+      "changedFiles": 2,
+      "additions": 22,
+      "deletions": 11,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86igTgq",
+      "title": "fix: rag",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/56",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-07T04:36:58Z",
+      "number": 56,
+      "changedFiles": 2,
+      "additions": 3,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86ie320",
+      "title": "RAG",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/55",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-08-07T00:38:18Z",
+      "number": 55,
+      "changedFiles": 12,
+      "additions": 366,
+      "deletions": 179,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86fG6x3",
+      "title": "Prompt & env & LoadingCmp",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/52",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-16T05:15:18Z",
+      "number": 52,
+      "changedFiles": 14,
+      "additions": 400,
+      "deletions": 349,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86d71UJ",
+      "title": "fix: json",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/51",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-08T12:15:39Z",
+      "number": 51,
+      "changedFiles": 3,
+      "additions": 10,
+      "deletions": 7,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86d51e2",
+      "title": "fix: mcp array and json form data",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/50",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-08T09:21:27Z",
+      "number": 50,
+      "changedFiles": 4,
+      "additions": 97,
+      "deletions": 31,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86d5f5X",
+      "title": "fix: prompts",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/49",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-08T08:52:19Z",
+      "number": 49,
+      "changedFiles": 2,
+      "additions": 4,
+      "deletions": 6,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86d5M0C",
+      "title": "fix: comments",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/48",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-08T08:24:53Z",
+      "number": 48,
+      "changedFiles": 1,
+      "additions": 15,
+      "deletions": 15,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86d5JmE",
+      "title": "fix: code styles and prompts",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/47",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-08T08:20:52Z",
+      "number": 47,
+      "changedFiles": 6,
+      "additions": 148,
+      "deletions": 51,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86duPhP",
+      "title": "fix: add summary",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/46",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-07T09:53:18Z",
+      "number": 46,
+      "changedFiles": 1,
+      "additions": 12,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86dt3nc",
+      "title": "fix: add code block",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/45",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-07T09:16:35Z",
+      "number": 45,
+      "changedFiles": 1,
+      "additions": 8,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86dcpOU",
+      "title": "fix: comment a build error",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/44",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-04T13:33:03Z",
+      "number": 44,
+      "changedFiles": 1,
+      "additions": 5,
+      "deletions": 5,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86dajn7",
+      "title": "fix: hide the select",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/43",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-04T10:27:28Z",
+      "number": 43,
+      "changedFiles": 1,
+      "additions": 32,
+      "deletions": 32,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86daYhI",
+      "title": "feat: mcp plugin",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/42",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-04T10:13:02Z",
+      "number": 42,
+      "changedFiles": 16,
+      "additions": 386,
+      "deletions": 93,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86dCfMG",
+      "title": "RAG update",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/37",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-07-02T08:15:58Z",
+      "number": 37,
+      "changedFiles": 12,
+      "additions": 848,
+      "deletions": 48,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86cgkc5",
+      "title": "fix: recorder manager",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/33",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-28T03:41:30Z",
+      "number": 33,
+      "changedFiles": 2,
+      "additions": 6,
+      "deletions": 5,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86cK5kG",
+      "title": "feat: add user friendly loading messages",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/32",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-26T05:52:18Z",
+      "number": 32,
+      "changedFiles": 2,
+      "additions": 30,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86cERIG",
+      "title": "fix: modify send voice logic",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/28",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-25T14:09:32Z",
+      "number": 28,
+      "changedFiles": 2,
+      "additions": 19,
+      "deletions": 9,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86b_cDy",
+      "title": "feat: add voice to text feature",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/27",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-25T06:19:55Z",
+      "number": 27,
+      "changedFiles": 12,
+      "additions": 251,
+      "deletions": 10,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86bwyMU",
+      "title": "Fix: MCP",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/26",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-24T02:20:04Z",
+      "number": 26,
+      "changedFiles": 15,
+      "additions": 1120,
+      "deletions": 92,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86bjhoq",
+      "title": "fix: query to prompt",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/22",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-22T14:57:52Z",
+      "number": 22,
+      "changedFiles": 6,
+      "additions": 46,
+      "deletions": 14,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86biouu",
+      "title": "Add RAG",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/20",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-22T07:26:35Z",
+      "number": 20,
+      "changedFiles": 4,
+      "additions": 211,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86bihvH",
+      "title": "feat: add mcp",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/19",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-22T06:16:24Z",
+      "number": 19,
+      "changedFiles": 11,
+      "additions": 364,
+      "deletions": 151,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86ZjmSn",
+      "title": "fix: talk to qwen by http rather LangChain",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/15",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-08T03:17:19Z",
+      "number": 15,
+      "changedFiles": 6,
+      "additions": 156,
+      "deletions": 50,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86Y_OGI",
+      "title": "feat: integrate the backend and modify the port",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/13",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-06-04T09:28:39Z",
+      "number": 13,
+      "changedFiles": 9,
+      "additions": 161,
+      "deletions": 86,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86YODd8",
+      "title": "fix: change the host",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/11",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-30T05:55:51Z",
+      "number": 11,
+      "changedFiles": 3,
+      "additions": 4,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86YIwwJ",
+      "title": "Integrate qwen's image recognition ability",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/8",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-29T14:56:04Z",
+      "number": 8,
+      "changedFiles": 2,
+      "additions": 1,
+      "deletions": 5,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86YF3kH",
+      "title": "Integrate LangChain to communicate with models",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/7",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-29T09:38:57Z",
+      "number": 7,
+      "changedFiles": 38,
+      "additions": 261,
+      "deletions": 53,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86X6jCH",
+      "title": "Change the production url",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/5",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-28T07:58:35Z",
+      "number": 5,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86XtJKX",
+      "title": "fix request",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/4",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-27T03:45:15Z",
+      "number": 4,
+      "changedFiles": 4,
+      "additions": 3,
+      "deletions": 8,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86XtA24",
+      "title": "feat: change the domain",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/3",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-27T03:14:25Z",
+      "number": 3,
+      "changedFiles": 6,
+      "additions": 9,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86XnLrj",
+      "title": "fix: build & CORS",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/2",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-26T10:20:08Z",
+      "number": 2,
+      "changedFiles": 6,
+      "additions": 21,
+      "deletions": 7,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOOwILt86Xj8jf",
+      "title": "Update README.md",
+      "url": "https://github.com/DreamRealized/agriculture-chatbot/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2025-05-26T01:19:07Z",
+      "number": 1,
+      "changedFiles": 1,
+      "additions": 6,
+      "deletions": 51,
+      "baseRepository": {
+        "name": "agriculture-chatbot",
+        "url": "https://github.com/DreamRealized/agriculture-chatbot",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
+          "login": "DreamRealized",
+          "url": "https://github.com/DreamRealized"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86C5R1B",
+      "title": "[Feat] Add buy me a coffee widget",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/86",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-11-23T04:37:56Z",
+      "number": 86,
+      "changedFiles": 1,
+      "additions": 13,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86C5CWG",
+      "title": "[FEAT]: Add Google Ads",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/85",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-11-23T02:56:58Z",
+      "number": 85,
+      "changedFiles": 2,
+      "additions": 8,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86CS_QB",
+      "title": "[feat] Integrate the Google Adsense for Ad",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/83",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-11-18T20:13:58Z",
+      "number": 83,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86CMTAK",
+      "title": "[Feat] Configuration of CD",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/80",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-11-18T05:11:36Z",
+      "number": 80,
+      "changedFiles": 2,
+      "additions": 14,
+      "deletions": 14,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86BO0V9",
+      "title": "[Docs] Update README",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/71",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-11-07T19:35:17Z",
+      "number": 71,
+      "changedFiles": 1,
+      "additions": 21,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86BJvxi",
+      "title": "[Docs] Change the CHANGELOG",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/69",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-11-07T08:27:22Z",
+      "number": 69,
+      "changedFiles": 2,
+      "additions": 27,
+      "deletions": 84,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86BI0Fc",
+      "title": "Docs(changelog): generate iteration2 changelog",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/66",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-11-07T05:27:07Z",
+      "number": 66,
+      "changedFiles": 2,
+      "additions": 72,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r86AeWVp",
+      "title": "[Feat] Add docker files for lab3",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/59",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-10-31T02:46:39Z",
+      "number": 59,
+      "changedFiles": 9,
+      "additions": 82,
+      "deletions": 14,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-_6tA",
+      "title": "[Docs] Move Task Management to a high order",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/52",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-10-17T17:27:34Z",
+      "number": 52,
+      "changedFiles": 1,
+      "additions": 4,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-mJc_",
+      "title": "[Fix](cd): change the EC2 ip to a Github secret",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/48",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-10-14T21:29:37Z",
+      "number": 48,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-mDcC",
+      "title": "[Feat] Just a showcase",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/47",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-10-14T21:08:43Z",
+      "number": 47,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-mBI1",
+      "title": "[Feat] Just a showcase",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/46",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2024-10-14T21:00:45Z",
+      "number": 46,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-l_cN",
+      "title": "[Chore] Show the whole workflow",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/45",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2024-10-14T20:55:14Z",
+      "number": 45,
+      "changedFiles": 5,
+      "additions": 511,
+      "deletions": 13,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-knS6",
+      "title": "[Feat][Doc] Add CHANGELOG.md and the related workflow",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/43",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-10-14T17:06:11Z",
+      "number": 43,
+      "changedFiles": 5,
+      "additions": 511,
+      "deletions": 13,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-ZAM6",
+      "title": "[Fix][CD]: Add sudo before the docker commands ",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/37",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-10-12T02:03:23Z",
+      "number": 37,
+      "changedFiles": 1,
+      "additions": 4,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-Yv_A",
+      "title": "[Feat](configuration): add auto deploy",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/36",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-10-11T23:10:26Z",
+      "number": 36,
+      "changedFiles": 5,
+      "additions": 110,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r85-XfpA",
+      "title": "[Feat](configuration): CD scripts",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/35",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-10-11T17:29:59Z",
+      "number": 35,
+      "changedFiles": 6,
+      "additions": 98,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r859cI7j",
+      "title": "[Feat](configuration): Integrate vitest and ci",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/29",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-10-03T00:23:04Z",
+      "number": 29,
+      "changedFiles": 13,
+      "additions": 531,
+      "deletions": 34,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r859Mrqd",
+      "title": "[Feat][Configuration] Integrate Docker for FE and create a docker-compose file",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/24",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-10-01T04:33:51Z",
+      "number": 24,
+      "changedFiles": 10,
+      "additions": 68,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r859CjCJ",
+      "title": "[Feat][Configuration] Add a Conventional Commit plugin and update the MD files",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/22",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-09-29T22:12:21Z",
+      "number": 22,
+      "changedFiles": 8,
+      "additions": 1299,
+      "deletions": 60,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r8588sSt",
+      "title": "Update the iteration0 branch",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/21",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-09-27T17:29:09Z",
+      "number": 21,
+      "changedFiles": 7,
+      "additions": 78,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r8588mzL",
+      "title": "Sync the Main to the iteration0",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/20",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2024-09-27T17:14:31Z",
+      "number": 20,
+      "changedFiles": 13,
+      "additions": 224,
+      "deletions": 4,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r8581Bqg",
+      "title": "Cherry-pick commits to release branch",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/13",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-09-26T17:33:30Z",
+      "number": 13,
+      "changedFiles": 3,
+      "additions": 90,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r858t4Rx",
+      "title": "[Feat][Infra] Update the README.md",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/11",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52944194?v=4",
+        "url": "https://github.com/Stanford997",
+        "login": "Stanford997"
+      },
+      "createdAt": "2024-09-25T22:23:34Z",
+      "number": 11,
+      "changedFiles": 3,
+      "additions": 90,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r858ULmh",
+      "title": "[Feat][FE] Add input element and upload file button",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/6",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/22527265?u=41db2d96a623db160fbff34ffdc25620ada90717&v=4",
+        "url": "https://github.com/Linchen-Xu",
+        "login": "Linchen-Xu"
+      },
+      "createdAt": "2024-09-23T05:42:55Z",
+      "number": 6,
+      "changedFiles": 10,
+      "additions": 773,
+      "deletions": 10,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r858Q2bE",
+      "title": "[Infra][Fix] Remove the empty fields in the issue template files",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/4",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-09-22T05:21:05Z",
+      "number": 4,
+      "changedFiles": 2,
+      "additions": 0,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r858QayQ",
+      "title": "[Infra][Feat] Create ISSUE and PR Templates",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/3",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-09-21T21:02:53Z",
+      "number": 3,
+      "changedFiles": 3,
+      "additions": 120,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMuS7r858QYh9",
+      "title": "[FE][Feat] Draw a basic layout and add some new files",
+      "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5/pull/2",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+        "url": "https://github.com/adamma1024",
+        "login": "adamma1024"
+      },
+      "createdAt": "2024-09-21T20:24:36Z",
+      "number": 2,
+      "changedFiles": 22,
+      "additions": 2593,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "seprojects-cs673a2f24_team5",
+        "url": "https://github.com/BUMETCS673/seprojects-cs673a2f24_team5",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOMqmvZM58QYHh",
+      "title": "[FE][Feat] Basic Layout and some new files",
+      "url": "https://github.com/BUMETCS673/bumetcs673f24-seprojects-GroupProjectTemplate/pull/19",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2024-09-21T20:17:02Z",
+      "number": 19,
+      "changedFiles": 25,
+      "additions": 2615,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "bumetcs673f24-seprojects-GroupProjectTemplate",
+        "url": "https://github.com/BUMETCS673/bumetcs673f24-seprojects-GroupProjectTemplate",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/65134126?v=4",
+          "login": "BUMETCS673",
+          "url": "https://github.com/BUMETCS673"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOImps-c579a7r",
+      "title": "Upgrade the gitui to 0.26.3",
+      "url": "https://github.com/mason-org/mason-registry/pull/7261",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6705160?u=5dc5ff534c6c6b4b5d8ebbf6dc77568fe3babcf8&v=4",
+        "url": "https://github.com/williamboman",
+        "login": "williamboman"
+      },
+      "createdAt": "2024-09-18T22:31:28Z",
+      "number": 7261,
+      "changedFiles": 1,
+      "additions": 24,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "mason-registry",
+        "url": "https://github.com/mason-org/mason-registry",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/119523708?v=4",
+          "login": "mason-org",
+          "url": "https://github.com/mason-org"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOJwq3YM5TWv6G",
+      "title": "[Feat] Update styles and navbar's text",
+      "url": "https://github.com/ArkTicketTech/Roadmap-Web/pull/1",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8191686?u=bff1ccfddfed23e50be25aed0828704fc448a64f&v=4",
+        "url": "https://github.com/wfnuser",
+        "login": "wfnuser"
+      },
+      "createdAt": "2023-06-19T15:53:10Z",
+      "number": 1,
+      "changedFiles": 7,
+      "additions": 30,
+      "deletions": 8,
+      "baseRepository": {
+        "name": "Roadmap-Web",
+        "url": "https://github.com/ArkTicketTech/Roadmap-Web",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/16058226?v=4",
+          "login": "ArkTicketTech",
+          "url": "https://github.com/ArkTicketTech"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDOGv5Pvs5TRKhN",
+      "title": "[Feat] Integrate version for cohere",
+      "url": "https://github.com/jmilldotdev/obsidian-gpt/pull/6",
+      "state": "OPEN",
+      "mergedBy": null,
+      "createdAt": "2023-06-18T06:21:24Z",
+      "number": 6,
+      "changedFiles": 2,
+      "additions": 28,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "obsidian-gpt",
+        "url": "https://github.com/jmilldotdev/obsidian-gpt",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/33093632?u=d97c0f530f05d2436d0958b2433c70dc5de14483&v=4",
+          "login": "jmilldotdev",
+          "url": "https://github.com/jmilldotdev"
+        }
+      }
+    },
+    {
+      "id": "PR_kwDODZdBO84ue9jt",
+      "title": "fix: 修复 47 全排列 的拼写错误 typo",
+      "url": "https://github.com/youngyangyang04/leetcode-master/pull/906",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/8636020?u=bfb439d6152b4aaf21a79b6ddfff4df1c1e24818&v=4",
+        "url": "https://github.com/youngyangyang04",
+        "login": "youngyangyang04"
+      },
+      "createdAt": "2021-11-13T09:44:23Z",
+      "number": 906,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "leetcode-master",
+        "url": "https://github.com/youngyangyang04/leetcode-master",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/8636020?u=bfb439d6152b4aaf21a79b6ddfff4df1c1e24818&v=4",
+          "login": "youngyangyang04",
+          "url": "https://github.com/youngyangyang04"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0NjE2NTQ3OTM5",
+      "title": "feat: 增加阻止原生点击事件",
+      "url": "https://github.com/view-design/ViewUI/pull/873",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2021-04-16T05:35:55Z",
+      "number": 873,
+      "changedFiles": 1,
+      "additions": 3,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "ViewUI",
+        "url": "https://github.com/view-design/ViewUI",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/54535603?v=4",
+          "login": "view-design",
+          "url": "https://github.com/view-design"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0NjE2NTQ1ODY4",
+      "title": "feat: #871 Dropdown 在 transfer 时, 极难控制原生点击事件冒泡",
+      "url": "https://github.com/view-design/ViewUI/pull/872",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2021-04-16T05:31:19Z",
+      "number": 872,
+      "changedFiles": 1,
+      "additions": 8,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "ViewUI",
+        "url": "https://github.com/view-design/ViewUI",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/54535603?v=4",
+          "login": "view-design",
+          "url": "https://github.com/view-design"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0NjEzMDI1MTg0",
+      "title": "Wrong Annotation, I fixed it and add W3C doc link",
+      "url": "https://github.com/mdn/translated-content/pull/469",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/165936?v=4",
+        "url": "https://github.com/irvin",
+        "login": "irvin"
+      },
+      "createdAt": "2021-04-11T07:26:25Z",
+      "number": 469,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "translated-content",
+        "url": "https://github.com/mdn/translated-content",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/7565578?v=4",
+          "login": "mdn",
+          "url": "https://github.com/mdn"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0NDU1MDUyNzA5",
+      "title": "fix: 527",
+      "url": "https://github.com/mathjax/MathJax-src/pull/528",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2020-07-22T11:17:24Z",
+      "number": 528,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "MathJax-src",
+        "url": "https://github.com/mathjax/MathJax-src",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/252187?v=4",
+          "login": "mathjax",
+          "url": "https://github.com/mathjax"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0Mzc1NTQzMzA0",
+      "title": "#317 解决 groupOptions 和 filterable同时为true时 value错误",
+      "url": "https://github.com/view-design/ViewUI/pull/326",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2020-02-14T19:38:21Z",
+      "number": 326,
+      "changedFiles": 0,
+      "additions": 0,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "ViewUI",
+        "url": "https://github.com/view-design/ViewUI",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/54535603?v=4",
+          "login": "view-design",
+          "url": "https://github.com/view-design"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0Mzc1NTE2Mjk4",
+      "title": "#317 解决 groupOptions 和 filterable同时为true时 value错误",
+      "url": "https://github.com/view-design/ViewUI/pull/325",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2020-02-14T18:29:13Z",
+      "number": 325,
+      "changedFiles": 1,
+      "additions": 6,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "ViewUI",
+        "url": "https://github.com/view-design/ViewUI",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/54535603?v=4",
+          "login": "view-design",
+          "url": "https://github.com/view-design"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjY4MjM5OTMz",
+      "title": "Fixed #5572",
+      "url": "https://github.com/iview/iview/pull/5574",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2019-04-08T08:51:03Z",
+      "number": 5574,
+      "changedFiles": 7,
+      "additions": 126,
+      "deletions": 18,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjU4NzU1MDIz",
+      "title": "#5382 增加全局变量 maskClosable 用以全局设置 Modal 模态窗口 是否点击遮罩层关闭",
+      "url": "https://github.com/iview/iview/pull/5383",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2019-03-06T15:03:19Z",
+      "number": 5383,
+      "changedFiles": 2,
+      "additions": 5,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjMzMTMwMDAz",
+      "title": "Tree add checkStrictly prop",
+      "url": "https://github.com/iview/iview/pull/4893",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5370542?u=b0a252d829f79aa37f65efeeaf114a399b6aae5a&v=4",
+        "url": "https://github.com/icarusion",
+        "login": "icarusion"
+      },
+      "createdAt": "2018-11-23T08:21:17Z",
+      "number": 4893,
+      "changedFiles": 1,
+      "additions": 7,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjMxNzM0NTUw",
+      "title": "tree on-select-change/on-check-change add node",
+      "url": "https://github.com/iview/iview/pull/4850",
+      "state": "MERGED",
+      "mergedBy": {
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5370542?u=b0a252d829f79aa37f65efeeaf114a399b6aae5a&v=4",
+        "url": "https://github.com/icarusion",
+        "login": "icarusion"
+      },
+      "createdAt": "2018-11-17T15:42:13Z",
+      "number": 4850,
+      "changedFiles": 1,
+      "additions": 2,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjMxMDg1MjQz",
+      "title": "tree node on-select-change return node bot nodes",
+      "url": "https://github.com/iview/iview/pull/4841",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-11-15T06:43:05Z",
+      "number": 4841,
+      "changedFiles": 1,
+      "additions": 2,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjMxMDU5Njg1",
+      "title": "Tree node add selectable",
+      "url": "https://github.com/iview/iview/pull/4838",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-11-15T03:49:49Z",
+      "number": 4838,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjMwODY3Njg0",
+      "title": "Tree node add selectable ",
+      "url": "https://github.com/iview/iview/pull/4834",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-11-14T15:04:32Z",
+      "number": 4834,
+      "changedFiles": 3,
+      "additions": 4,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjMwODU0MzI4",
+      "title": "Tree node add selectable ",
+      "url": "https://github.com/iview/iview/pull/4833",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-11-14T14:26:58Z",
+      "number": 4833,
+      "changedFiles": 3,
+      "additions": 4,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjE5MTI0Nzk4",
+      "title": "Table add on-select-all-cancel event",
+      "url": "https://github.com/iview/iview/pull/4601",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-09-29T04:32:27Z",
+      "number": 4601,
+      "changedFiles": 3,
+      "additions": 5,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjExNDcxNDc5",
+      "title": "modal esc event stopPropagation",
+      "url": "https://github.com/iview/iview/pull/4386",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-08-28T15:49:51Z",
+      "number": 4386,
+      "changedFiles": 1,
+      "additions": 1,
+      "deletions": 0,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjExNDYyOTc4",
+      "title": "modal Esc event need stopPropagation",
+      "url": "https://github.com/iview/iview/pull/4385",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-08-28T15:25:36Z",
+      "number": 4385,
+      "changedFiles": 2,
+      "additions": 4,
+      "deletions": 1,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjEwNzYwNzUy",
+      "title": "直接修改tree  on-select-change/ on-check-change 返回值  为  node",
+      "url": "https://github.com/iview/iview/pull/4358",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-08-24T14:41:09Z",
+      "number": 4358,
+      "changedFiles": 2,
+      "additions": 3,
+      "deletions": 2,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    },
+    {
+      "id": "MDExOlB1bGxSZXF1ZXN0MjEwNzU4MjU2",
+      "title": "树控件新增on-check和on-select事件用来返回被修改状态的node",
+      "url": "https://github.com/iview/iview/pull/4357",
+      "state": "CLOSED",
+      "mergedBy": null,
+      "createdAt": "2018-08-24T14:32:07Z",
+      "number": 4357,
+      "changedFiles": 2,
+      "additions": 5,
+      "deletions": 3,
+      "baseRepository": {
+        "name": "iview",
+        "url": "https://github.com/iview/iview",
+        "owner": {
+          "avatarUrl": "https://avatars.githubusercontent.com/u/20693613?v=4",
+          "login": "iview",
+          "url": "https://github.com/iview"
+        }
+      }
+    }
+  ],
+  "open": 1,
+  "closed": 20,
+  "merged": 79,
+  "totalCount": 100
+}
