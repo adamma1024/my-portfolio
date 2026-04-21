@@ -547,6 +547,17 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Founder & CEO",
+          company: "DreamRealized Tech LLC",
+          company_url: "https://dreamrealized.net",
+          logo_path: "dreamrealized-logo.png",
+          duration: "Apr 2025 - Present",
+          location: "Boston, MA",
+          description:
+            "Founded an AI consulting firm that integrates cutting-edge AI capabilities into businesses. Built intelligent solutions including an agriculture chatbot (LLM + RAG) and Gradpazz, a secondhand marketplace app live on the Apple App Store. Helping companies realize their vision through custom AI development, strategy consulting, and seamless integration.",
+          color: "#7c3aed",
+        },
+        {
           title: "Research Assistant",
           company: "Boston University",
           company_url: "https://www.bu.edu/",
@@ -613,10 +624,10 @@ const experience = {
 
 // // Projects Page
 const projectsHeader = {
-  //   title: "Projects",
-  //   description:
-  //     "My projects make use of a vast variety of the latest technology tools. My best experience is in developing web applications and deploying them using cloud infrastructure.",
-  //   avatar_image_path: "projects_image.svg",
+  title: "Projects",
+  description:
+    "I build AI-powered products and tools that solve real problems. From intelligent chatbots to full marketplace apps, I leverage modern tech stacks to ship fast and iterate.",
+  avatar_image_path: "projects_image.svg",
 };
 
 const publicationsHeader = {
