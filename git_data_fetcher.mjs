@@ -135,6 +135,30 @@ const queries = {
       }
     `,
     variables: { userName: openSource.githubUserName }
+  },
+  org_repos: {
+    query: `
+      query($orgName: String!) {
+        organization(login: $orgName) {
+          repositories(first: 10, orderBy: {field: UPDATED_AT, direction: DESC}, privacy: PUBLIC) {
+            nodes {
+              id
+              name
+              createdAt
+              url
+              description
+              isFork
+              languages(first: 10) {
+                nodes {
+                  name
+                }
+              }
+            }
+          }
+        }
+      }
+    `,
+    variables: { orgName: "DreamRealized" }
   }
 };
 
@@ -151,6 +175,7 @@ const languages_icons = {
   PHP: "logos-php",
   Dockerfile: "simple-icons:docker",
   Rust: "logos-rust",
+  TypeScript: "logos-typescript-icon",
 };
 
 const baseUrl = "https://api.github.com/graphql";
@@ -258,29 +283,49 @@ async function processOrgData() {
   }
 }
 
-// Process Pinned Projects data
+// Process Pinned Projects data + org repos
 async function processPinnedProjectsData() {
   try {
     const data = await fetchGitHubData("Pinned Projects", queries.pinned_projects);
-    const projects = data.data.user.pinnedItems.nodes;
+    const pinnedProjects = data.data.user.pinnedItems.nodes;
+
+    // Fetch DreamRealized org repos
+    let orgProjects = [];
+    try {
+      const orgData = await fetchGitHubData("Org Repos", queries.org_repos);
+      orgProjects = orgData.data.organization.repositories.nodes;
+      console.log(`  Found ${orgProjects.length} DreamRealized org repos`);
+    } catch (e) {
+      console.warn("  Could not fetch org repos:", e.message);
+    }
+
+    // Merge: org repos first, then pinned (deduplicate by name)
+    const seen = new Set();
+    const allProjects = [...orgProjects, ...pinnedProjects].filter(p => {
+      if (seen.has(p.name)) return false;
+      seen.add(p.name);
+      return true;
+    });
+
+    const formatProject = project => ({
+      ...project,
+      languages: project.languages.nodes
+        .filter(lang => lang.name in languages_icons)
+        .map(lang => ({
+          name: lang.name,
+          iconifyClass: languages_icons[lang.name]
+        }))
+    });
 
     const newProjects = {
-      data: projects.map(project => ({
-        ...project,
-        languages: project.languages.nodes
-          .filter(lang => lang.name in languages_icons)
-          .map(lang => ({
-            name: lang.name,
-            iconifyClass: languages_icons[lang.name]
-          }))
-      }))
+      data: allProjects.map(formatProject)
     };
 
     await fs.promises.writeFile(
       "./src/shared/opensource/projects.json",
       JSON.stringify(newProjects, null, 2)
     );
-    console.log("✓ Pinned Projects data saved successfully\n");
+    console.log("✓ Pinned Projects + Org Repos data saved successfully\n");
   } catch (error) {
     console.error("Failed to process Pinned Projects data:", error.message);
   }
