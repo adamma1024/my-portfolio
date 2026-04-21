@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="g" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="40%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <g filter="url(#glow)">
+    <!-- Level 1 branches -->
+    <line x1="64" y1="30" x2="36" y2="58" stroke="url(#g)" stroke-width="3" opacity="0.8"/>
+    <line x1="64" y1="30" x2="92" y2="58" stroke="url(#g)" stroke-width="3" opacity="0.8"/>
+    <!-- Level 2 branches -->
+    <line x1="36" y1="58" x2="22" y2="86" stroke="url(#g)" stroke-width="2.5" opacity="0.6"/>
+    <line x1="36" y1="58" x2="50" y2="86" stroke="url(#g)" stroke-width="2.5" opacity="0.6"/>
+    <line x1="92" y1="58" x2="78" y2="86" stroke="url(#g)" stroke-width="2.5" opacity="0.6"/>
+    <line x1="92" y1="58" x2="106" y2="86" stroke="url(#g)" stroke-width="2.5" opacity="0.6"/>
+    <!-- Root -->
+    <circle cx="64" cy="30" r="7" fill="#f472b6"/>
+    <circle cx="64" cy="30" r="3" fill="white" opacity="0.3"/>
+    <!-- Level 1 -->
+    <circle cx="36" cy="58" r="6" fill="#a78bfa"/>
+    <circle cx="92" cy="58" r="6" fill="#a78bfa"/>
+    <!-- Leaves -->
+    <circle cx="22" cy="86" r="5" fill="#38bdf8"/>
+    <circle cx="50" cy="86" r="5" fill="#38bdf8"/>
+    <circle cx="78" cy="86" r="5" fill="#38bdf8"/>
+    <circle cx="106" cy="86" r="5" fill="#38bdf8"/>
+    <circle cx="22" cy="86" r="2" fill="white" opacity="0.2"/>
+    <circle cx="106" cy="86" r="2" fill="white" opacity="0.2"/>
+  </g>
+</svg>
