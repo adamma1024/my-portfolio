@@ -4,11 +4,6 @@
       "login": "DreamRealized",
       "avatarUrl": "https://avatars.githubusercontent.com/u/213283517?v=4",
       "__typename": "Organization"
-    },
-    {
-      "login": "Decode-Origin",
-      "avatarUrl": "https://avatars.githubusercontent.com/u/207368386?v=4",
-      "__typename": "Organization"
     }
   ]
 }
