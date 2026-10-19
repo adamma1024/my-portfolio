@@ -46,17 +46,49 @@ export type Experience = {
 
 export const experience: Experience = {
   skills: {
-    programming_languages: ["JavaScript", "TypeScript", "Python", "C/C++"],
-    frontend: ['React', 'Vue2/Vue3', 'Web Components', 'Micro Frontend', 'Tailwind CSS', 'CSS-in-JS'],
+    programming_languages: ["JavaScript", "TypeScript", "Kotlin", "Swift", "Python", "C/C++"],
+    frontend: ['React', 'Next.js', 'Kotlin Multiplatform', 'SwiftUI', 'Jetpack Compose', 'Vue2/Vue3', 'Web Components', 'Micro Frontend', 'Tailwind CSS', 'CSS-in-JS'],
     backend: ['Node.js', 'Microservices', 'REST', 'GraphQL', 'gRPC', 'Kafka', 'Message Queue'],
     database: ['PostgreSQL', 'MySQL', 'Redis', 'MongoDB', 'SQL Server'],
-    ai_machine_learning_engineering: ['Ollama', 'RAG', 'MCP Server', 'Embeddings', 'LangChain'],
+    ai_machine_learning_engineering: ['Coding Agents (Claude Code, Codex)', 'Agent Harness & Guardrails', 'MCP Server', 'Context Engineering', 'Ollama', 'RAG', 'Embeddings', 'LangChain'],
     tools_platforms: ['Docker', 'Kubernetes', 'AWS', 'Azure', 'Vite', 'webpack', 'Turborepo', 'CI/CD', 'Playwright', 'Vitest', 'Git'],
     concepts: ['Micro-frontend Architecture', 'Distributed Systems', 'System Design', 'Performance Optimization', 'Scalability', 'Data Security'],
     soft_skills: ['Problem-Solving', 'Collaboration', 'Innovation'],
     others: ['Unit Testing', 'E2E Testing', 'HTTP/2', 'WebSocket', 'TCP/IP', 'Linux', 'Design Patterns', 'Code Review'],
   },
   experiences: [
+    {
+      company: 'Sekai (sekai.ai)',
+      department: 'Mobile & Web',
+      position: 'Head of Mobile & Web Engineering',
+      startDate: '2025.05',
+      endDate: 'Present',
+      type: 'fullstack',
+      works: [{
+        title: 'Led the migration of the Sekai app from Flutter to native iOS (SwiftUI) / Android (Compose) on a Kotlin Multiplatform core',
+        content: 'the KMP shared core owns networking (Ktor), storage (SQLDelight), session, analytics, feed, game and experiments, with generated DTOs; legacy screens run as an embedded Flutter module during the move. Shipped 45 Android and 41 iOS releases in 4 months behind device-proof CI gates.',
+      },
+      {
+        title: 'Built Guy, a Slack-native coding-agent platform',
+        content: 'anyone can `@guy` to open a Task; each turn runs in an isolated container with a headless Claude/Gemini session (up to 6 concurrent). Guy dispatches approved Tasks to AWS workers with hour/dollar caps, queues device jobs to a Mac mini simulator/emulator fleet, and shepherds PRs through CI, conflicts and review to auto-merge — 270+ Tasks handled for ~$1.40/month of infrastructure.',
+      },
+      {
+        title: 'Built the machine-readable context layer for agents',
+        content: 'a 32-repo index routes each feature to its source-of-truth repo and required workflow, a CI-checked corpus indexes ~190 knowledge docs, and session-start hooks inject both — so agents look up verified facts before reading code.',
+      },
+      {
+        title: 'Built a multi-client agent harness with guardrails (Claude Code, Cursor, Codex, Gemini)',
+        content: 'every Task follows a design → approved → implementing → proof → PR → closed lifecycle in its own git worktree, enforced at four tiers (instructions, pre-edit hooks, git hooks, required server checks) with fail-closed policy; risky actions (protected push, merge, `rm -rf`, publish) pause for Slack Approve/Deny, and cleanup proves a merge before deleting anything.',
+      },
+      {
+        title: 'Built an SRE agent for crash triage',
+        content: 'which collects crashes from Sentry, Crashlytics and Google Play, triages them with an LLM, and opens draft fix PRs, keeping merges with a human.',
+      },
+      {
+        title: 'Driving incremental modernization of the sekai.ai web app (Next.js 15 / React 19)',
+        content: 'authored 25 of 39 architecture ADRs, covering the game shell and its versioning, the AsyncAPI bridge contract, `/play/<id>` routing and local-first saves.',
+      }]
+    },
     {
       company: 'Microsoft',
       department: 'Azure Data',
