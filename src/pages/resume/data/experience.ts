@@ -61,7 +61,7 @@ export const experience: Experience = {
       company: 'Sekai (sekai.ai)',
       department: 'Mobile & Web',
       position: 'Head of Mobile & Web Engineering',
-      startDate: '2025.05',
+      startDate: '2026.05',
       endDate: 'Present',
       type: 'fullstack',
       works: [{

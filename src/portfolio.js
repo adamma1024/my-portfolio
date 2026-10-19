@@ -551,7 +551,7 @@ const experience = {
           company: "Sekai",
           company_url: "https://sekai.ai",
           logo_path: "sekai-logo.png",
-          duration: "May 2025 - Present",
+          duration: "May 2026 - Present",
           location: "Belmont, CA",
           description:
             "Leading mobile and web engineering at Sekai, an AI-native game and story creation platform. Led the migration of the app from Flutter to native iOS/Android on a Kotlin Multiplatform core, shipping 80+ releases in four months, and am incrementally modernizing the sekai.ai web app. Built the team's AI engineering platform: Guy, a Slack-native agent that runs coding Tasks in isolated containers and on a mobile device fleet; a machine-readable context layer that gives agents verified knowledge; and a cross-agent harness that enforces design → approval → implementation behind fail-closed guardrails.",
