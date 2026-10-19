@@ -58,35 +58,31 @@ export const experience: Experience = {
   },
   experiences: [
     {
-      company: 'Sekai (sekai.ai)',
+      company: 'Sekai',
       department: 'Mobile & Web',
       position: 'Head of Mobile & Web Engineering',
       startDate: '2026.05',
       endDate: 'Present',
       type: 'fullstack',
       works: [{
-        title: 'Led the migration of the Sekai app from Flutter to native iOS (SwiftUI) / Android (Compose) on a Kotlin Multiplatform core',
-        content: 'the KMP shared core owns networking (Ktor), storage (SQLDelight), session, analytics, feed, game and experiments, with generated DTOs; legacy screens run as an embedded Flutter module during the move. Shipped 45 Android and 41 iOS releases in 4 months behind device-proof CI gates.',
+        title: 'Built Guy, letting any employee ship app/web changes from Slack',
+        content: 'PMs and designers ask; agents build, Mac mini simulators verify, humans approve. 270+ Tasks shipped.',
       },
       {
-        title: 'Built Guy, a Slack-native coding-agent platform',
-        content: 'anyone can `@guy` to open a Task; each turn runs in an isolated container with a headless Claude/Gemini session (up to 6 concurrent). Guy dispatches approved Tasks to AWS workers with hour/dollar caps, queues device jobs to a Mac mini simulator/emulator fleet, and shepherds PRs through CI, conflicts and review to auto-merge — 270+ Tasks handled for ~$1.40/month of infrastructure.',
+        title: 'Built agent context and guardrails',
+        content: 'knowledge index, Task lifecycle, per-Task worktrees, fail-closed checks and Slack approvals.',
       },
       {
-        title: 'Built the machine-readable context layer for agents',
-        content: 'a 32-repo index routes each feature to its source-of-truth repo and required workflow, a CI-checked corpus indexes ~190 knowledge docs, and session-start hooks inject both — so agents look up verified facts before reading code.',
+        title: 'Led Flutter → native iOS/Android migration on Kotlin Multiplatform',
+        content: '80+ releases in 4 months; D1 retention +23% on Android (30% → 37%) and +18% on iOS (40% → 47%).',
       },
       {
-        title: 'Built a multi-client agent harness with guardrails (Claude Code, Cursor, Codex, Gemini)',
-        content: 'every Task follows a design → approved → implementing → proof → PR → closed lifecycle in its own git worktree, enforced at four tiers (instructions, pre-edit hooks, git hooks, required server checks) with fail-closed policy; risky actions (protected push, merge, `rm -rf`, publish) pause for Slack Approve/Deny, and cleanup proves a merge before deleting anything.',
+        title: 'Cut crash rate to 0.4%',
+        content: 'under half of Google Play\'s 1.09% bad-behavior threshold, via device-proof CI gates and an LLM crash-triage agent.',
       },
       {
-        title: 'Built an SRE agent for crash triage',
-        content: 'which collects crashes from Sentry, Crashlytics and Google Play, triages them with an LLM, and opens draft fix PRs, keeping merges with a human.',
-      },
-      {
-        title: 'Driving incremental modernization of the sekai.ai web app (Next.js 15 / React 19)',
-        content: 'authored 25 of 39 architecture ADRs, covering the game shell and its versioning, the AsyncAPI bridge contract, `/play/<id>` routing and local-first saves.',
+        title: 'Modernizing the sekai.ai web app (Next.js, React 19)',
+        content: 'authored 25 of 39 ADRs.',
       }]
     },
     {
@@ -97,16 +93,20 @@ export const experience: Experience = {
       endDate: '2024.08',
       type: 'fullstack',
       works: [{
-        title: 'Built several core web apps for Microsoft Fabric (React, TypeScript)',
-        content: '— Notebook, Spark Job Definition, and Runtime Settings — used daily by thousands of enterprise customers. Also added AI features to the Notebook: code completion and natural-language-to-code, both powered by LLM APIs.',
+        title: 'Built core Microsoft Fabric apps',
+        content: 'Notebook, Spark Job and Runtime Settings for thousands of enterprise customers; added LLM code completion.',
       },
       {
-        title: 'Set up the team\'s monitoring and testing infrastructure from scratch.',
-        content: 'This included real-time alerting dashboards (tracking performance and user behavior) and a push to get unit + E2E test coverage to 80%, which noticeably cut down production incidents.',
+        title: 'Led the monorepo migration (pnpm + Turborepo, 50+ packages)',
+        content: 'and moved to Vite, cutting dev startup from 40 s to 2 s.',
       },
       {
-        title: 'Cut our CI/CD pipeline from ~2 hours down to 20 minutes.',
-        content: 'I wrote a tool that parses Git diffs using TypeScript AST analysis to figure out which modules actually changed, so the pipeline only runs what\'s needed. Several teams across the org adopted it.',
+        title: 'Raised test coverage to 80%',
+        content: 'and built real-time alerting, cutting production incidents.',
+      },
+      {
+        title: 'Cut CI/CD from 2 h to 20 min',
+        content: 'with a Git-diff + TypeScript AST impact tool adopted across the org.',
       }]
     },
     {
@@ -117,12 +117,12 @@ export const experience: Experience = {
       endDate: '2021.12',
       type: 'fullstack',
       works: [{
-        title: 'Owned the Formula Kit end-to-end — editor, renderer, and backend (React, Node.js, Python).',
-        content: 'The editor used Monaco for syntax highlighting and supported LaTeX input via keyboard, OCR, and plain text. I also wrote a custom line-breaking algorithm for formula rendering, which we filed as a patent.',
+        title: 'Owned Formula Kit end-to-end',
+        content: 'editor, renderer and backend; patented a formula line-breaking algorithm.',
       },
       {
-        title: 'Improved system throughput by about 50% during a traffic spike.',
-        content: 'The fix involved moving to a multi-threaded architecture and deploying on a FaaS platform so we could scale horizontally without manual intervention.',
+        title: 'Raised throughput 50% during a traffic spike',
+        content: 'via multi-threading on auto-scaling FaaS.',
       }],
     },
     {
@@ -134,7 +134,7 @@ export const experience: Experience = {
       type: 'early career',
       works: [{
         title: "",
-        content: "Introduced the company's first micro-frontend setup and built a shared Vue component library. Before that, 20+ teams were each doing their own thing — this gave everyone a common UI foundation and cut way down on integration headaches.",
+        content: "Built the company's first micro-frontend and a shared Vue library for 20+ teams.",
       }],
     }],
   projects: [
@@ -145,9 +145,8 @@ export const experience: Experience = {
       type: 'AI',
       role: 'Tech Lead & Main Contributor',
       details: [
-        'Built a conversational AI agent for agricultural Q&A. It runs Ollama with RAG for better accuracy and connects directly to PostgreSQL via MCP for live data queries.',
-        'Added multimodal input — users can upload images, record voice, and get spoken responses back. Used LangChain for managing conversation history. The whole thing is modular so each capability is a separate component.',
-        'Deployed deepseek-r1:32b and qwen2.5-VL:32b on A100 GPUs locally for faster inference.',
+        'Agricultural Q&A agent: Ollama + RAG, live PostgreSQL via MCP, image and voice I/O.',
+        'Self-hosted deepseek-r1:32b and qwen2.5-VL:32b on A100 GPUs.',
       ]
     },
     {
@@ -157,7 +156,7 @@ export const experience: Experience = {
       type: 'AI',
       role: 'Research Assistant',
       details: [
-        'Built a tool to catch security issues in AI-generated code. The system uses RAG with Qdrant as the vector store and runs LLMs locally via Ollama. I fed it security rules from OWASP and CWE as the knowledge base, then created evaluation benchmarks to measure how well it actually catches vulnerabilities in C, Python, and JavaScript.',
+        'RAG (Qdrant + Ollama) over OWASP/CWE rules to flag vulnerabilities in AI-generated code, with custom benchmarks.',
       ]
     },
   ],

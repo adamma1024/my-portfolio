@@ -9,10 +9,11 @@ export const Skills = (props: { skills: S, variant: ResumeVariant }) => {
     backend,
     database,
     ai_machine_learning_engineering,
+    tools_platforms,
     others
   } = skills;
 
-  const showAI = variant === 'ai';
+  const showAI = variant !== 'frontend';
   const showBackend = variant !== 'frontend';
 
   return <div className="r-section">
@@ -43,6 +44,10 @@ export const Skills = (props: { skills: S, variant: ResumeVariant }) => {
             <span>{ai_machine_learning_engineering.join(", ")}</span>
           </span>
         )}
+        <span className="r-line">
+          <span className="b">Tools &amp; Platforms: </span>
+          <span>{tools_platforms.join(", ")}</span>
+        </span>
         <span className="r-line">
           <span className="b">Others: </span>
           <span>{others.join(", ")}</span>
