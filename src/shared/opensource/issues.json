@@ -1,6 +1,26 @@
 {
   "data": [
     {
+      "id": "I_kwDOR9svV878FsWJ",
+      "closed": true,
+      "title": "feat: v2 — Migrate R2 to scored image output with store_selection()",
+      "createdAt": "2026-04-09T04:10:31Z",
+      "url": "https://github.com/adamma1024/ditto-take-home/issues/3",
+      "number": 3,
+      "assignees": {
+        "nodes": []
+      },
+      "repository": {
+        "name": "ditto-take-home",
+        "url": "https://github.com/adamma1024/ditto-take-home",
+        "owner": {
+          "login": "adamma1024",
+          "avatarUrl": "https://avatars.githubusercontent.com/u/21209891?u=78fa964ecdf1a8d6f83ede70c65ef5829a448aa3&v=4",
+          "url": "https://github.com/adamma1024"
+        }
+      }
+    },
+    {
       "id": "I_kwDOR9svV878FsF6",
       "closed": false,
       "title": "feat: v2 — Migrate R1 analysis to LLM function calling with store_analysis()",
@@ -967,26 +987,6 @@
           "login": "jestjs",
           "avatarUrl": "https://avatars.githubusercontent.com/u/103283236?v=4",
           "url": "https://github.com/jestjs"
-        }
-      }
-    },
-    {
-      "id": "I_kwDOBhMY7s5Cjmci",
-      "closed": true,
-      "title": "How could I do npm unpublish in my pipeline?",
-      "createdAt": "2022-01-27T18:53:20Z",
-      "url": "https://github.com/MicrosoftDocs/azure-devops-docs/issues/11903",
-      "number": 11903,
-      "assignees": {
-        "nodes": []
-      },
-      "repository": {
-        "name": "azure-devops-docs",
-        "url": "https://github.com/MicrosoftDocs/azure-devops-docs",
-        "owner": {
-          "login": "MicrosoftDocs",
-          "avatarUrl": "https://avatars.githubusercontent.com/u/22479449?v=4",
-          "url": "https://github.com/MicrosoftDocs"
         }
       }
     },
