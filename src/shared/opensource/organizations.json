@@ -9,6 +9,11 @@
       "login": "agentconnect-md",
       "avatarUrl": "https://avatars.githubusercontent.com/u/297117619?v=4",
       "__typename": "Organization"
+    },
+    {
+      "login": "Human-Agent-Society",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/268553699?v=4",
+      "__typename": "Organization"
     }
   ]
 }
