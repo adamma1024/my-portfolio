@@ -1,57 +1,33 @@
 import React from "react";
 import { Skills as S, ResumeVariant } from "../data/experience";
+import { ResumeLabels, SkillKey } from "../data/i18n";
 
-export const Skills = (props: { skills: S, variant: ResumeVariant }) => {
-  const { skills, variant } = props;
-  const {
-    programming_languages,
-    frontend,
-    backend,
-    database,
-    ai_machine_learning_engineering,
-    tools_platforms,
-    others
-  } = skills;
+export const Skills = (props: { skills: S, variant: ResumeVariant, labels: ResumeLabels }) => {
+  const { skills, variant, labels } = props;
 
   const showAI = variant !== 'frontend';
   const showBackend = variant !== 'frontend';
 
+  const rows: SkillKey[] = [
+    'programming_languages',
+    'frontend',
+    ...(showBackend ? ['backend' as const] : []),
+    'database',
+    ...(showAI ? ['ai_machine_learning_engineering' as const] : []),
+    'tools_platforms',
+    'others',
+  ];
+
   return <div className="r-section">
     <div>
-      <div className="t1">SKILLS</div>
+      <div className="t1">{labels.skills}</div>
       <div className="r-block resume-text-xs">
-        <span className="r-line">
-          <span className="b">Programming Languages: </span>
-          <span>{programming_languages.join(", ")}</span>
-        </span>
-        <span className="r-line">
-          <span className="b">Frontend: </span>
-          <span>{frontend.join(", ")}</span>
-        </span>
-        {showBackend && (
-          <span className="r-line">
-            <span className="b">Backend: </span>
-            <span>{backend.join(", ")}</span>
+        {rows.map((key) => (
+          <span className="r-line" key={key}>
+            <span className="b">{labels.skillNames[key]}</span>
+            <span>{skills[key].join(labels.listSep)}</span>
           </span>
-        )}
-        <span className="r-line">
-          <span className="b">Database: </span>
-          <span>{database.join(", ")}</span>
-        </span>
-        {showAI && (
-          <span className="r-line">
-            <span className="b">AI &amp; Machine Learning: </span>
-            <span>{ai_machine_learning_engineering.join(", ")}</span>
-          </span>
-        )}
-        <span className="r-line">
-          <span className="b">Tools &amp; Platforms: </span>
-          <span>{tools_platforms.join(", ")}</span>
-        </span>
-        <span className="r-line">
-          <span className="b">Others: </span>
-          <span>{others.join(", ")}</span>
-        </span>
+        ))}
       </div>
     </div>
   </div>

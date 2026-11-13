@@ -102,6 +102,11 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Chinese: Monaco has no CJK glyphs, so name a CJK fallback explicitly. */
+.resume-page.resume-lang-zh {
+  font-family: 'Monaco', 'Menlo', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans CJK SC', monospace;
+}
+
 /* Base div reset within resume scope */
 .resume-page div {
   display: flex;
@@ -222,7 +227,7 @@
 }
 
 /* === Tab bar === */
-.resume-tab-bar {
+.resume-page .resume-tab-bar {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -274,6 +279,25 @@
 
 .resume-tab-bar .theme-toggle-btn:hover svg {
   fill: var(--accent);
+}
+
+/* Narrow screens: stack the toolbar above the page instead of over it. */
+@media (max-width: 1400px) {
+  .resume-page .resume-tab-bar {
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 1rem;
+  }
+}
+
+.resume-tab-bar .lang-toggle {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
+
+.resume-tab-bar .lang-toggle button {
+  padding: 0.4rem 0.75rem;
 }
 
 .resume-tab-bar .print-btn {
