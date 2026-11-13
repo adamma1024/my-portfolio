@@ -4,8 +4,7 @@ import { bigProjects } from "../../portfolio";
 
 export default function StartupProject() {
   function openProjectInNewWindow(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
+    window.location.href = url;
   }
 
   return (
