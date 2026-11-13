@@ -1,9 +1,10 @@
 import React from "react";
 import { EnhancedSpan } from "../components/EnhancedSpan";
 import { ProjectItem, ResumeVariant } from "../data/experience";
+import { ResumeLabels } from "../data/i18n";
 
-export const Projects = (props: { projects: ProjectItem[], variant: ResumeVariant }) => {
-  const { projects, variant } = props;
+export const Projects = (props: { projects: ProjectItem[], variant: ResumeVariant, labels: ResumeLabels }) => {
+  const { projects, variant, labels } = props;
 
   const filteredProjects = projects.filter((item) => {
     if (variant === 'ai') return true;
@@ -13,7 +14,7 @@ export const Projects = (props: { projects: ProjectItem[], variant: ResumeVarian
 
   return <div className="r-section">
     <div>
-      <div className="t1">PROJECTS</div>
+      <div className="t1">{labels.projects}</div>
       <div>
         {
           filteredProjects.map((item, i) => {

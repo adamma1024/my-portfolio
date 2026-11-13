@@ -4,18 +4,19 @@ import { Experience } from './sections/Experience';
 import { Profile } from './sections/Profile';
 import { Projects } from './sections/Projects';
 import { Skills } from './sections/Skills';
-import { profile } from './data/profile';
-import { experience, ResumeVariant } from './data/experience';
+import { ResumeVariant } from './data/experience';
+import { getResumeContent, ResumeLang } from './data/i18n';
 
-function Resume({ variant }: { variant: ResumeVariant }) {
+function Resume({ variant, lang }: { variant: ResumeVariant, lang: ResumeLang }) {
+  const { labels, profile, experience } = getResumeContent(lang);
   const { experiences, skills, projects } = experience;
   return (
     <div className="resume-a4">
-      <Profile {...profile} />
-      <Education educations={profile.education} />
-      <Experience experiences={experiences} variant={variant} />
-      <Projects projects={projects} variant={variant} />
-      <Skills skills={skills} variant={variant} />
+      <Profile {...profile} labels={labels} />
+      <Education educations={profile.education} labels={labels} />
+      <Experience experiences={experiences} variant={variant} labels={labels} />
+      <Projects projects={projects} variant={variant} labels={labels} />
+      <Skills skills={skills} variant={variant} labels={labels} />
     </div>
   );
 }

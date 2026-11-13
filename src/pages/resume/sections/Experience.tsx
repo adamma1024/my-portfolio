@@ -1,9 +1,10 @@
 import React from "react";
 import { EnhancedSpan } from "../components/EnhancedSpan";
 import { ExperienceItem, ResumeVariant } from "../data/experience";
+import { ResumeLabels } from "../data/i18n";
 
-export const Experience = (props: { experiences: ExperienceItem[], variant: ResumeVariant }) => {
-  const { experiences, variant } = props;
+export const Experience = (props: { experiences: ExperienceItem[], variant: ResumeVariant, labels: ResumeLabels }) => {
+  const { experiences, variant, labels } = props;
 
   const shouldShowDetails = (type: string) => {
     switch (variant) {
@@ -20,7 +21,7 @@ export const Experience = (props: { experiences: ExperienceItem[], variant: Resu
 
   return <div className="r-section">
     <div>
-      <div className="t1">EXPERIENCE</div>
+      <div className="t1">{labels.experience}</div>
       <div>
         {
           experiences.map((item, i) => {
@@ -36,7 +37,7 @@ export const Experience = (props: { experiences: ExperienceItem[], variant: Resu
                   {works.map((work, j) => {
                     const { title, content } = work;
                     return <div className="ex-paragraph" key={j}>
-                      <span className="b">{title && `${title}, `}</span>
+                      <span className="b">{title && `${title}${labels.titleSep}`}</span>
                       <EnhancedSpan text={content} />
                     </div>
                   })}
