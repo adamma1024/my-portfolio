@@ -1,0 +1,181 @@
+/*
+ * Lin Ma · portfolio theme
+ *
+ * Palette  official @catppuccin/tailwindcss — Latte (light) / Mocha (dark).
+ * Mode     <html class="latte|mocha">, the plugin's own flavour classes, set before
+ *          first paint by the inline script in index.html. The toggle UI follows
+ *          Docusaurus ColorModeToggle (2-state sun/moon). Do not key dark mode on a
+ *          [data-theme] attribute: the plugin's `@variant dark { :root {…} }` block
+ *          then compiles to a selector that never matches.
+ * Accent   <html data-accent="…">, one of the 14 Catppuccin accents, default blue.
+ * Org/data colours are passed per element as --c (e.g. style="--c: var(--ctp-mauve)").
+ *
+ * Rule: components use the semantic tokens below (bg-card, text-fg-muted,
+ * border-line, bg-accent …), never raw hex and never a flavour-specific value.
+ */
+@import "tailwindcss";
+@import "@catppuccin/tailwindcss/mocha.css";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/jetbrains-mono";
+
+/* Tailwind's `dark:` follows the flavour class, not the OS media query. */
+@custom-variant dark (&:where(.mocha, .mocha *));
+
+/* ---------- accent ---------- */
+:root { --accent: var(--catppuccin-color-blue); }
+:root[data-accent="rosewater"] { --accent: var(--catppuccin-color-rosewater); }
+:root[data-accent="flamingo"]  { --accent: var(--catppuccin-color-flamingo); }
+:root[data-accent="pink"]      { --accent: var(--catppuccin-color-pink); }
+:root[data-accent="mauve"]     { --accent: var(--catppuccin-color-mauve); }
+:root[data-accent="red"]       { --accent: var(--catppuccin-color-red); }
+:root[data-accent="maroon"]    { --accent: var(--catppuccin-color-maroon); }
+:root[data-accent="peach"]     { --accent: var(--catppuccin-color-peach); }
+:root[data-accent="yellow"]    { --accent: var(--catppuccin-color-yellow); }
+:root[data-accent="green"]     { --accent: var(--catppuccin-color-green); }
+:root[data-accent="teal"]      { --accent: var(--catppuccin-color-teal); }
+:root[data-accent="sky"]       { --accent: var(--catppuccin-color-sky); }
+:root[data-accent="sapphire"]  { --accent: var(--catppuccin-color-sapphire); }
+:root[data-accent="blue"]      { --accent: var(--catppuccin-color-blue); }
+:root[data-accent="lavender"]  { --accent: var(--catppuccin-color-lavender); }
+
+/* ---------- surfaces that differ by mode beyond the palette ---------- */
+:root {
+  color-scheme: light;
+  --raised: var(--catppuccin-color-base);          /* popovers, palette, toast */
+  --shadow: rgb(76 79 105 / 0.14);
+}
+:root.mocha {
+  color-scheme: dark;
+  --raised: var(--catppuccin-color-surface0);
+  --shadow: rgb(0 0 0 / 0.4);
+}
+
+@theme inline {
+  /* surfaces */
+  --color-page: var(--catppuccin-color-mantle);
+  --color-card: var(--catppuccin-color-base);
+  --color-raised: var(--raised);
+  --color-line: var(--catppuccin-color-surface0);
+  --color-line-strong: var(--catppuccin-color-surface1);
+
+  /* text, strongest → faintest */
+  --color-fg: var(--catppuccin-color-text);
+  --color-fg-soft: var(--catppuccin-color-subtext1);
+  --color-fg-muted: var(--catppuccin-color-subtext0);
+  --color-fg-faint: var(--catppuccin-color-overlay1);
+  --color-fg-ghost: var(--catppuccin-color-overlay0);
+
+  /* accent */
+  --color-accent: var(--accent);
+  --color-on-accent: var(--catppuccin-color-base);
+
+  /* semantic state (separate from the accent) */
+  --color-ok: var(--catppuccin-color-green);
+  --color-warn: var(--catppuccin-color-yellow);
+  --color-bad: var(--catppuccin-color-red);
+
+  /* syntax — official Catppuccin mapping */
+  --color-syn-keyword: var(--catppuccin-color-mauve);
+  --color-syn-string: var(--catppuccin-color-green);
+  --color-syn-number: var(--catppuccin-color-peach);
+  --color-syn-type: var(--catppuccin-color-yellow);
+  --color-syn-property: var(--catppuccin-color-blue);
+  --color-syn-punct: var(--catppuccin-color-overlay2);
+  --color-syn-comment: var(--catppuccin-color-overlay1);
+
+  /* type */
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, "PingFang SC", monospace;
+  --text-display: clamp(2.5rem, 6vw, 3.875rem);
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.035em;
+  --text-title: 2rem;
+  --text-title--line-height: 1.1;
+  --text-title--letter-spacing: -0.03em;
+  --text-stat: 2.125rem;
+  --text-stat--line-height: 1.05;
+  --text-stat--letter-spacing: -0.03em;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.5;
+
+  /* shape & depth */
+  --radius-tile: 16px;
+  --radius-card: 12px;
+  --radius-control: 8px;
+  --shadow-pop: 0 16px 40px var(--shadow);
+  --shadow-window: 0 18px 50px -24px var(--shadow);
+  --shadow-lift: 0 12px 28px -14px var(--shadow);
+
+  /* motion — entrances move, never fade from 0, so a paused frame is still readable */
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --animate-page-in: page-in 0.28s var(--ease-out-soft);
+  --animate-pop: pop 0.14s ease-out;
+  --animate-spin-in: spin-in 0.45s var(--ease-out-soft);
+  --animate-pulse-ring: pulse-ring 2s infinite;
+
+  @keyframes page-in { from { transform: translateY(6px); } to { transform: none; } }
+  @keyframes pop { from { transform: scale(0.97) translateY(-3px); } to { transform: none; } }
+  @keyframes spin-in { from { transform: rotate(-90deg) scale(0.6); } to { transform: none; } }
+  @keyframes pulse-ring {
+    0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--catppuccin-color-green) 55%, transparent); }
+    70% { box-shadow: 0 0 0 7px transparent; }
+    100% { box-shadow: 0 0 0 0 transparent; }
+  }
+}
+
+/* short aliases for per-element data colours: style="--c: var(--ctp-peach)" */
+:root {
+  --ctp-rosewater: var(--catppuccin-color-rosewater); --ctp-flamingo: var(--catppuccin-color-flamingo);
+  --ctp-pink: var(--catppuccin-color-pink); --ctp-mauve: var(--catppuccin-color-mauve);
+  --ctp-red: var(--catppuccin-color-red); --ctp-maroon: var(--catppuccin-color-maroon);
+  --ctp-peach: var(--catppuccin-color-peach); --ctp-yellow: var(--catppuccin-color-yellow);
+  --ctp-green: var(--catppuccin-color-green); --ctp-teal: var(--catppuccin-color-teal);
+  --ctp-sky: var(--catppuccin-color-sky); --ctp-sapphire: var(--catppuccin-color-sapphire);
+  --ctp-blue: var(--catppuccin-color-blue); --ctp-lavender: var(--catppuccin-color-lavender);
+}
+
+@layer base {
+  html { background: var(--color-page); color: var(--color-fg); -webkit-text-size-adjust: 100%; }
+  body { font-family: var(--font-sans); font-size: 15px; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  ::selection { background: color-mix(in srgb, var(--accent) 28%, transparent); }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  }
+}
+
+/* ---------- signature utilities ---------- */
+/* dotted canvas behind graphs, covers and the timeline */
+@utility dot-grid {
+  background-image: radial-gradient(color-mix(in srgb, var(--catppuccin-color-surface1) 70%, transparent) 1px, transparent 1.3px);
+  background-size: 18px 18px;
+}
+/* cursor-following border glow on Home tiles; the parent writes --mx/--my on pointermove */
+@utility spotlight {
+  position: relative;
+  isolation: isolate;
+  &::before {
+    content: ""; position: absolute; inset: -1px; border-radius: inherit; padding: 1px; z-index: -1; pointer-events: none;
+    opacity: 0; transition: opacity 0.25s;
+    background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--accent) 75%, transparent), transparent 70%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+  }
+  &::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: -1; pointer-events: none;
+    opacity: 0; transition: opacity 0.25s;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--accent) 7%, transparent), transparent 65%);
+  }
+  :where(.spotlight-group:hover) &::before, :where(.spotlight-group:hover) &::after { opacity: 1; }
+}
+/* keycap: kbd hints, Vim help, stack keys */
+@utility keycap {
+  font: 500 11px var(--font-mono);
+  padding: 1px 5px;
+  border: 1px solid var(--color-line-strong);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  background: var(--color-card);
+  color: var(--color-fg-muted);
+  white-space: nowrap;
+}
