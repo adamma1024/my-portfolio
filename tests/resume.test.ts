@@ -7,6 +7,8 @@ test('resume defaults to English', async ({ page }) => {
   const resume = page.locator(screenResume);
   await expect(resume).toContainText('EXPERIENCE');
   await expect(resume).toContainText('Lin Ma');
+  await expect(resume).toContainText('Head of Client Engineering');
+  await expect(resume).not.toContainText('Modernizing the sekai.ai');
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
 });
 
@@ -16,7 +18,8 @@ test('resume renders Chinese via ?lang=zh', async ({ page }) => {
   await expect(resume).toContainText('马林');
   await expect(resume).toContainText('工作经历');
   await expect(resume).toContainText('教育背景');
-  await expect(resume).toContainText('移动端与 Web 工程负责人');
+  await expect(resume).toContainText('客户端工程负责人');
+  await expect(resume).not.toContainText('sekai.ai Web');
   await expect(resume).not.toContainText('EXPERIENCE');
   await expect(page.locator('html')).toHaveAttribute('lang', 'zh-CN');
 });

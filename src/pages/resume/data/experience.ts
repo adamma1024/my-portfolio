@@ -59,8 +59,8 @@ export const experience: Experience = {
   experiences: [
     {
       company: 'Sekai',
-      department: 'Mobile & Web',
-      position: 'Head of Mobile & Web Engineering',
+      department: 'Client Engineering',
+      position: 'Head of Client Engineering',
       startDate: '2026.05',
       endDate: 'Present',
       type: 'fullstack',
@@ -79,10 +79,6 @@ export const experience: Experience = {
       {
         title: 'Cut crash rate to 0.4%',
         content: 'under half of Google Play\'s 1.09% bad-behavior threshold, via device-proof CI gates and an LLM crash-triage agent.',
-      },
-      {
-        title: 'Modernizing the sekai.ai web app (Next.js, React 19)',
-        content: 'authored 25 of 39 ADRs.',
       }]
     },
     {

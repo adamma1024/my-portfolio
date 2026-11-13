@@ -10,8 +10,8 @@ export const experienceZh: Experience = {
   experiences: [
     {
       company: 'Sekai',
-      department: 'Mobile & Web',
-      position: '移动端与 Web 工程负责人',
+      department: 'Client Engineering',
+      position: '客户端工程负责人',
       startDate: '2026年05月',
       endDate: '至今',
       type: 'fullstack',
@@ -30,10 +30,6 @@ export const experienceZh: Experience = {
       {
         title: '崩溃率降至 0.4%',
         content: '不到 Google Play 1.09% 不良行为阈值的一半；靠真机验证的 CI 门禁和 LLM 崩溃分诊 Agent。',
-      },
-      {
-        title: '推进 sekai.ai Web 应用现代化（Next.js、React 19）',
-        content: '39 份 ADR 中主笔 25 份。',
       }]
     },
     {
